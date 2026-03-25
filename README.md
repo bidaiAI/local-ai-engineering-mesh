@@ -1,90 +1,124 @@
 # Local AI Engineering Mesh
 
+[中文](README.zh-CN.md) | [English](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [Français](README.fr.md)
+
 Upgrade your AI tools from isolated assistants into a governed, memory-backed, evidence-driven engineering system.
 
-This repository is not a chat prompt pack. It is a repository-shaped operating model for upgrading local AI tools from "can answer" to "can run a disciplined engineering workflow."
+This repository is not a chat prompt pack. It is a repository-shaped operating model for upgrading local AI tools from “can answer” to “can run a disciplined engineering workflow.”
 
 It reflects a bigger idea: Codex is not running alone. In this setup, Codex, Cursor, Antigravity, Claude Code, and OpenCode can be treated as specialized endpoints inside one cross-platform AI coding system, coordinated through a unified `AGENTS.md`.
 
-## The practical problem
+## Why this exists
 
 Most people do not really have an AI system.
-
-They have:
-- one tool for coding
-- another tool for research
-- another tool for browser-heavy work
-- another tool they switch back to when the first one feels weak
+They have several tools they keep switching between:
+- one for coding
+- one for research
+- one for browser-heavy work
+- one fallback tool when the first one feels weak
 
 That creates a familiar failure pattern:
-- constant tool switching
+- repeated tool switching
 - duplicated instructions
-- no stable memory across tools
-- different output styles and quality bars
-- strong dependence on whichever one product currently feels best
+- unstable memory across tools
+- drifting output style and quality bar
+- dependence on whichever one product currently feels best
 
 This repository exists to solve that problem.
 
 The goal is not to worship one tool.
 The goal is to make multiple local AI tools behave like one coordinated engineering system.
 
-In practical terms, that means:
-- Codex can handle governed execution
-- Cursor can handle editor-native implementation flow
-- Antigravity can handle broader capability expansion
-- Claude can remain part of the working set instead of being the only pillar
-
-The point is not that every tool does everything equally well.
-The point is that the overall system remains usable even when one tool becomes temporarily unavailable, rate-limited, degraded, or simply less convenient to use.
-
-## Why this exists
-
-The real gap between agent tools is rarely just the model name.
-
-The bigger gap is workflow closure:
-- memory
-- bootstrap
-- commands
-- hooks
-- orchestration
-- research-first planning
-- evidence
-- release discipline
-
-This repository packages that layer as a reusable local AI engineering mesh.
-
-It is designed around a very practical belief:
-
-**Do not build your whole workflow on one AI product being permanently available, permanently preferred, and permanently enough.**
-
-Instead:
-- keep one shared law
-- keep one engineering quality bar
-- keep multiple specialized endpoints
-- reduce platform lock-in
-- preserve your working style even if one endpoint is unavailable
-
 ## What this upgrades
 
-- `memory`: persistent working law, routing rules, and skill layering
+- `shared law`: one top-level operating model through `AGENTS.md`
+- `memory`: persistent working law, routing rules, and project state
 - `bootstrap`: project initialization for commands, memory, and risk posture
 - `orchestration`: explicit roles for planning, design, verification, and release
-- `planning`: parallel research and structured `plan.md` before broad implementation
+- `planning`: parallel research and structured execution plans
 - `evidence`: completion requires proof instead of narrative
 - `release safety`: preview-first and publish gates
 - `evolution`: repeated wins can become native reusable skills
 
-## What you get
+## Live system snapshot
 
-- A local-AI workflow model organized like a real repository
-- A cross-platform instruction model with multiple governed execution endpoints
-- Concrete starting templates for Codex, Cursor, and Antigravity layers
-- A way to include Claude in the system without making Claude the only dependency
-- A more resilient workflow when one tool is unavailable or temporarily unusable
-- Publish-ready documentation instead of a process diary
-- Templates for global memory and project memory
-- A clean comparison frame against the latest Claude workflow model
-- X-style social copy for public posting
+This repository is based on a real working local setup. At the time of writing, the live environment behind it includes:
+- `30` Codex skills in `~/.codex/skills`
+- `3` global memory files in `~/.codex/memories`
+- `10` project governance commands in `.codex/commands`
+- `5` project memory files in `.codex/memory`
+- active project state files in `.codex/state`
+
+That means this is not just a theory post. It is already operating at:
+- rules layer
+- skill layer
+- project runtime layer
+- state layer
+- evidence layer
+
+## Four-tool assessment on this machine
+
+These are not universal benchmark scores. They are architecture-level assessments of one real local setup as of **March 25, 2026**.
+
+### Codex — 92/100
+**Role:** primary engineering execution and governance hub.
+
+**Strengths**
+- strongest local execution center in this setup
+- governed skills, commands, release discipline, and evidence workflow
+- best fit for turning plans into disciplined project delivery
+
+**Limitations**
+- default product smoothness and automation feel can still be less natural than Claude in some workflows
+
+### Claude — 90/100
+**Role:** workflow methodology engine and reference stack.
+
+**Strengths**
+- strongest command-and-workflow feel
+- strong modular thinking, review habits, and collaboration ergonomics
+- still the most mature benchmark for coding workflow design
+
+**Limitations**
+- in this specific local system, it is not as deeply integrated into execution governance as Codex
+
+### Cursor — 89/100
+**Role:** IDE battlefield and editor-native implementation layer.
+
+**Strengths**
+- closest to the coding surface
+- strong project rule density inside the editor
+- ideal for reducing day-to-day development friction
+
+**Limitations**
+- weaker system-governance and operating-system feel than Codex or Antigravity
+
+### Antigravity — 91/100
+**Role:** broad capability expansion platform.
+
+**Strengths**
+- wide coverage across browsing, artifacts, knowledge, and extended skills
+- feels more like a platform than a single tool
+- excellent for capability expansion and cross-domain work
+
+**Limitations**
+- breadth can introduce noise
+- for the core engineering path, it is not always as steady as Codex
+
+### Overall local system — 91/100
+This machine is strongest not because one single AI is unbeatable, but because the tools have been organized into one system:
+- shared operating law
+- multiple specialized endpoints
+- project memory
+- execution gates
+- cross-platform consistency
+
+The most accurate summary is:
+
+**Shared Law + Multi-Tool Specialized AI System**
+
+This is no longer a “pick one tool” setup.
+It is a coordinated local AI engineering mesh.
 
 ## Cross-platform setup
 
@@ -97,13 +131,7 @@ This means the system here is both:
 - tool-native in execution
 - cross-platform in policy
 
-This also changes the user experience:
-
-- you are no longer forced to restart your workflow from scratch every time you switch tools
-- you are no longer treating Claude, Codex, Cursor, and Antigravity as unrelated islands
-- you are no longer betting your whole engineering flow on one vendor or one login state
-
-That resilience is part of the design, not a side effect.
+It also means your workflow does not need to reset every time you switch tools.
 
 See [CROSS-PLATFORM.md](docs/CROSS-PLATFORM.md).
 
@@ -117,13 +145,7 @@ This repository does **not** claim that a local tool automatically beats Claude 
 
 It makes a narrower and more useful claim:
 
-If you give local AI tools a stronger operating system layer, they become much more competitive on long-horizon engineering execution because the workflow stops depending on one perfect prompt.
-
-That includes a more robust operating model when:
-- one tool is temporarily unavailable
-- one account cannot be used
-- one product is better for one phase but worse for another
-- you want your workflow to survive product churn instead of resetting every few months
+If you give local AI tools a stronger operating system layer, they become much more competitive on long-horizon engineering execution because the workflow stops depending on one perfect prompt or one permanently available product.
 
 See [COMPARE-WITH-CLAUDE.md](docs/COMPARE-WITH-CLAUDE.md).
 
@@ -132,6 +154,10 @@ See [COMPARE-WITH-CLAUDE.md](docs/COMPARE-WITH-CLAUDE.md).
 ```text
 local-ai-engineering-mesh/
 ├── README.md
+├── README.zh-CN.md
+├── README.ru.md
+├── README.ja.md
+├── README.fr.md
 ├── docs/
 │   ├── ARCHITECTURE.md
 │   ├── COMPARE-WITH-CLAUDE.md
@@ -153,55 +179,7 @@ local-ai-engineering-mesh/
 
 See [REPO-MAP.md](docs/REPO-MAP.md).
 
-## Architecture
-
-The operating model is built in layers:
-
-1. Bootstrap
-2. Constitution
-3. Memory
-4. Hooks and commands
-5. Skills
-6. Orchestration
-7. Research
-8. Evidence and review
-9. Evolution
-
-See [ARCHITECTURE.md](docs/ARCHITECTURE.md).
-
-## Execution loop
-
-One of the strongest ideas absorbed into this setup is:
-
-`parallel research -> structured plan -> mechanical execution -> evidence-backed completion`
-
-The key is not copying someone else's slash commands.
-The key is making planning durable and session-resistant through explicit plan artifacts and governed execution.
-
-See [EXECUTION-LOOP.md](docs/EXECUTION-LOOP.md).
-
-## Tool stack
-
-Core stack:
-- Codex desktop
-- Cursor
-- Antigravity
-- Claude Code as a peer reference and usable endpoint
-- shared `AGENTS.md`
-- local terminal execution
-- governed skill layers
-
-Key workflow tools:
-- `playwright`
-- `gh-fix-ci`
-- `security-*`
-- `frontend-skill`
-- `sentry`
-- governed deploy and PR flows
-
-See [STACK.md](docs/STACK.md).
-
-## Templates included
+## Included templates
 
 This repository includes reusable templates for:
 - global memory
@@ -210,12 +188,10 @@ This repository includes reusable templates for:
 - Antigravity workflow and knowledge stubs
 - policy defaults
 
-The goal is to help you start with a governed local-AI layout instead of inventing one from scratch.
-
-You can adopt it in three ways:
-- single-tool first: start by upgrading one tool, usually Codex
-- dual-tool setup: keep one execution tool and one IDE tool
-- full mesh: Codex + Cursor + Antigravity + Claude working under one shared law
+Adoption paths:
+- single-tool first
+- dual-tool setup
+- full mesh: Codex + Cursor + Antigravity + Claude under one shared law
 
 ## Social copy
 
