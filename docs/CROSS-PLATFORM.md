@@ -29,6 +29,20 @@ It is not only:
 It is also:
 - the Codex execution layer of a shared agent operating system
 
+It also changes the failure mode of the user's workflow.
+
+Without a shared system, each tool becomes its own island:
+- separate instructions
+- separate habits
+- separate quality bars
+- separate recovery cost when switching
+
+With a shared system:
+- the user keeps one operating law
+- tool switching becomes less destructive
+- the workflow has more resilience when one endpoint is temporarily unavailable
+- Claude can remain part of the system without being the single point of dependency
+
 ## Source influence
 
 The cross-platform philosophy and part of the organizational inspiration come from:
@@ -62,6 +76,15 @@ The Antigravity side is strongest when the workflow needs:
 - browser and artifact-heavy work
 - domain expansion beyond pure coding
 - workflow and knowledge layers that feel closer to an AI platform
+
+### Claude Code
+
+Claude remains important in this setup because it is still a strong benchmark for:
+- workflow ergonomics
+- polished command culture
+- mature collaboration feel
+
+But the system is intentionally designed so that Claude does not have to be the only place where the user's engineering workflow lives.
 
 ## Practical takeaway
 
