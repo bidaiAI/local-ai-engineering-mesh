@@ -154,13 +154,15 @@ browser / artifacts / knowledge / workflows"]
     F --> K["证据门"]
     F --> L["可复用模式"]
 ```
+这张总图故意保持简洁。每个工具下面更具体的公开包，已经在下方 **每个工具已经公开了哪些具体包** 中列出，并在 [TOOL-LAYERS.md](docs/TOOL-LAYERS.md) 和 [FRAMEWORK-DIAGRAM.md](docs/FRAMEWORK-DIAGRAM.md) 里继续展开。
 
 ## 这个仓库包含什么
 
 - 一套分层系统设计
 - 一个针对 Codex / Claude / Cursor / Antigravity 的四工具角色模型
+- 每个工具下面都有具体公开包，而不只是抽象框架说明
 - 一套公开安全的路径约定
-- 可复用的 memory / rules / workflow 模板
+- 可复用的 memory / rules / commands / workflow / knowledge 模板
 - 治理、记忆、bootstrap 等核心制度文档
 - 跨平台协同与 Claude 对照说明
 
@@ -174,6 +176,43 @@ browser / artifacts / knowledge / workflows"]
 - 之后再逐步扩展成更高性能的多工具组合
 
 参见 [TOOL-LAYERS.md](docs/TOOL-LAYERS.md) 和 [WORKFLOWS-AND-COMBOS.md](docs/WORKFLOWS-AND-COMBOS.md)。
+
+## 每个工具已经公开了哪些具体包
+
+### Codex
+已经公开：
+- `skills/state-store-memory/`
+- `skills/safe-pr-flow/`
+- `skills/governed-deploy/`
+- `skills/visual-evidence/`
+- `skills/project-bootstrap/`
+- `templates/codex/config.example.toml`
+- `templates/codex/instructions.example.md`
+
+### Claude
+已经公开：
+- `templates/claude/CLAUDE.example.md`
+- `templates/claude/commands/plan.md`
+- `templates/claude/commands/review.md`
+- `templates/claude/commands/verify.md`
+- `templates/claude/commands/publish.md`
+- `templates/claude/rules-pack/`
+
+### Cursor
+已经公开：
+- `templates/cursor/engineering-mesh.mdc`
+- `templates/cursor/evidence-release-gate.mdc`
+- `templates/cursor/rules-pack/`
+
+### Antigravity
+已经公开：
+- `templates/antigravity/local-ai-mesh-workflow.md`
+- `templates/antigravity/knowledge-stub.md`
+- `templates/antigravity/workflows/`
+- `templates/antigravity/knowledge/`
+
+这一层很关键，因为它说明这个仓库不是只讲角色定位，而是每个工具都已经有可以直接拿去改造的具体内容。
+
 
 ## 总体框架层
 

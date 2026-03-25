@@ -9,7 +9,7 @@ Use this file as the source for a repository diagram or overview image.
 ## Image goal
 
 Show that this repository is not a prompt pack.
-It is a networked local AI engineering system with a shared law at the top, specialized tool layers in the middle, and project runtime discipline at the bottom.
+It is a networked local AI engineering system with a shared law at the top, specialized tool layers in the middle, concrete public packs under each tool, and project runtime discipline at the bottom.
 
 ## Mermaid version
 
@@ -19,30 +19,46 @@ flowchart TD
 AGENTS.md"]
 
     subgraph COD["Codex"]
-      B1["config + instructions"]
-      B2["governed skills"]
-      B3["reviewers + routing"]
-      B4["runtime commands + evidence"]
+      B1["config.example.toml
+instructions.example.md"]
+      B2["state-store-memory
+safe-pr-flow
+governed-deploy"]
+      B3["visual-evidence
+project-bootstrap"]
+      B4["runtime commands
+state + evidence"]
     end
 
     subgraph CLA["Claude"]
-      C1["project law"]
-      C2["command culture"]
-      C3["review + planning"]
-      C4["workflow benchmark"]
+      C1["CLAUDE.example.md"]
+      C2["/plan /review /verify /publish"]
+      C3["rules-pack
+security / testing / git"]
+      C4["planning + review
+workflow benchmark"]
     end
 
     subgraph CUR["Cursor"]
-      D1["editor rules"]
-      D2["inline implementation"]
-      D3["project-local delivery"]
+      D1["engineering-mesh.mdc
+evidence-release-gate.mdc"]
+      D2["design-first-gate
+tdd-discipline"]
+      D3["review / debug / anti-patterns
+context / git-safety"]
+      D4["project-local delivery"]
     end
 
     subgraph ANT["Antigravity"]
-      E1["skills"]
-      E2["workflows"]
-      E3["knowledge"]
-      E4["browser + artifacts"]
+      E1["local-ai-mesh-workflow
+knowledge-stub"]
+      E2["browser-research-evidence
+cross-tool-handoff"]
+      E3["OPERATING-LAW
+SESSION-HANDOFF
+WORKFLOW-INDEX"]
+      E4["browser + artifacts
+knowledge + handoff"]
     end
 
     A --> B1
@@ -52,15 +68,15 @@ AGENTS.md"]
 
     B1 --> B2 --> B3 --> B4
     C1 --> C2 --> C3 --> C4
-    D1 --> D2 --> D3
+    D1 --> D2 --> D3 --> D4
     E1 --> E2 --> E3 --> E4
 
     B4 --> F["Project Runtime
 <project>/.codex/commands
 <project>/.codex/memory
 <project>/.codex/state"]
-    C3 --> G["Planning + Review"]
-    D3 --> H["Editor Delivery"]
+    C4 --> G["Planning + Review"]
+    D4 --> H["Editor Delivery"]
     E4 --> I["Research + Artifacts"]
 
     F --> J["Evidence Gate"]
@@ -99,9 +115,14 @@ local-ai-engineering-mesh/
 └── templates/
     ├── AGENTS.example.md
     ├── antigravity/
+    │   ├── workflows/
+    │   └── knowledge/
     ├── claude/
+    │   ├── commands/
+    │   └── rules-pack/
     ├── codex/
     ├── cursor/
+    │   └── rules-pack/
     ├── global-memory/
     ├── project-memory/
     └── policy.env.example
@@ -111,6 +132,7 @@ local-ai-engineering-mesh/
 
 - top layer: shared operating law
 - middle layer: tool-specific structure layers
+- concrete layer: public packs that upgrade each tool beyond stock defaults
 - bottom layer: project runtime, evidence, and release discipline
 
 That is what turns separate AI tools into a governed engineering mesh.

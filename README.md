@@ -156,13 +156,15 @@ browser / artifacts / knowledge / workflows"]
     F --> K["Evidence Gate"]
     F --> L["Reusable Patterns"]
 ```
+This top-level diagram stays simple on purpose. The concrete packs under each tool are listed in **Concrete packs by tool** below and expanded further in [TOOL-LAYERS.md](docs/TOOL-LAYERS.md) and [FRAMEWORK-DIAGRAM.md](docs/FRAMEWORK-DIAGRAM.md).
 
 ## What this repository includes
 
 - a layered system design
 - a four-tool role model for Codex, Claude, Cursor, and Antigravity
+- concrete public packs under each tool, not just abstract framework talk
 - public-safe path conventions
-- reusable templates for memory, rules, and workflows
+- reusable templates for memory, rules, commands, workflows, and knowledge
 - operating documents for governance, memory, and bootstrap
 - diagrams and comparison notes for cross-platform usage
 
@@ -176,6 +178,43 @@ browser / artifacts / knowledge / workflows"]
 - scale into a higher-performance multi-tool setup later
 
 See [TOOL-LAYERS.md](docs/TOOL-LAYERS.md) and [WORKFLOWS-AND-COMBOS.md](docs/WORKFLOWS-AND-COMBOS.md).
+
+## Concrete packs by tool
+
+### Codex
+Public packs already included:
+- `skills/state-store-memory/`
+- `skills/safe-pr-flow/`
+- `skills/governed-deploy/`
+- `skills/visual-evidence/`
+- `skills/project-bootstrap/`
+- `templates/codex/config.example.toml`
+- `templates/codex/instructions.example.md`
+
+### Claude
+Public packs already included:
+- `templates/claude/CLAUDE.example.md`
+- `templates/claude/commands/plan.md`
+- `templates/claude/commands/review.md`
+- `templates/claude/commands/verify.md`
+- `templates/claude/commands/publish.md`
+- `templates/claude/rules-pack/`
+
+### Cursor
+Public packs already included:
+- `templates/cursor/engineering-mesh.mdc`
+- `templates/cursor/evidence-release-gate.mdc`
+- `templates/cursor/rules-pack/`
+
+### Antigravity
+Public packs already included:
+- `templates/antigravity/local-ai-mesh-workflow.md`
+- `templates/antigravity/knowledge-stub.md`
+- `templates/antigravity/workflows/`
+- `templates/antigravity/knowledge/`
+
+This is the layer that makes the repository useful immediately: each tool has a concrete upgrade path instead of only a role description.
+
 
 ## System framework
 
