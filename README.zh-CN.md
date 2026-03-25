@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) ![Mesh](https://img.shields.io/badge/System-Local%20AI%20Engineering%20Mesh-6f42c1) ![Tools](https://img.shields.io/badge/Tools-Codex%20%7C%20Claude%20%7C%20Cursor%20%7C%20Antigravity-blue) ![Status](https://img.shields.io/badge/Status-Public--Safe-success)
 
-[中文](README.zh-CN.md) | [English](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [Français](README.fr.md)
+[中文](README.zh-CN.md) | [English](README.md)
 
 把本地 AI 工具从彼此割裂的助手，升级成一套有治理、有记忆、有证据闭环的工程系统。
 
@@ -570,9 +570,6 @@ cd local-ai-engineering-mesh
 local-ai-engineering-mesh/
 ├── README.md
 ├── README.zh-CN.md
-├── README.ru.md
-├── README.ja.md
-├── README.fr.md
 ├── LICENSE
 ├── scripts/
 │   └── setup-project-runtime.sh

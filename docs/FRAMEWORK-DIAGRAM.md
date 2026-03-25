@@ -147,8 +147,7 @@ local-ai-engineering-mesh/
 │   ├── EXECUTION-LOOP.md
 │   ├── REPO-MAP.md
 │   ├── STACK.md
-│   ├── FRAMEWORK-DIAGRAM.md
-│   └── IMAGE-LABELS.md
+│   └── FRAMEWORK-DIAGRAM.md
 ├── scripts/
 │   └── setup-project-runtime.sh
 ├── skills/
@@ -183,7 +182,3 @@ local-ai-engineering-mesh/
 - bottom layer: evidence, release discipline, and reusable patterns
 
 That is what turns separate AI tools into a governed engineering mesh.
-
-## Companion labels
-
-For poster-style or social-image text, see [IMAGE-LABELS.md](IMAGE-LABELS.md).

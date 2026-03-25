@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) ![Mesh](https://img.shields.io/badge/System-Local%20AI%20Engineering%20Mesh-6f42c1) ![Tools](https://img.shields.io/badge/Tools-Codex%20%7C%20Claude%20%7C%20Cursor%20%7C%20Antigravity-blue) ![Status](https://img.shields.io/badge/Status-Public--Safe-success)
 
-[中文](README.zh-CN.md) | [English](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [Français](README.fr.md)
+[中文](README.zh-CN.md) | [English](README.md)
 
 A public-safe operating model for turning local AI tools into one governed, memory-backed, evidence-driven engineering system.
 
@@ -573,9 +573,6 @@ See [COMPARE-WITH-CLAUDE.md](docs/COMPARE-WITH-CLAUDE.md).
 local-ai-engineering-mesh/
 ├── README.md
 ├── README.zh-CN.md
-├── README.ru.md
-├── README.ja.md
-├── README.fr.md
 ├── LICENSE
 ├── scripts/
 │   └── setup-project-runtime.sh

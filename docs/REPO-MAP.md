@@ -15,9 +15,6 @@ Main English readme with the full system framework, four-tool evaluation, and sa
 ### `README.zh-CN.md`
 Chinese readme with the full framework explanation and four-tool system assessment.
 
-### `README.ru.md` / `README.ja.md` / `README.fr.md`
-Localized overview variants.
-
 ## `docs/`
 
 ### `ARCHITECTURE.md`
