@@ -1,10 +1,6 @@
 # Framework Diagram
 
-Use this file as the source for the launch image. The easiest workflow is:
-
-1. render the Mermaid chart
-2. take a clean screenshot
-3. use that screenshot as the X thread image
+Use this file as the source for a repository diagram or overview image.
 
 ## Diagram title
 
@@ -86,7 +82,7 @@ local-ai-engineering-mesh/
     └── policy.env.example
 ```
 
-## Caption for the image
+## Suggested caption
 
 This is the point of the repository:
 
