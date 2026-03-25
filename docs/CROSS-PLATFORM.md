@@ -22,10 +22,10 @@ Ce dépôt décrit une operating law commune à plusieurs outils IA de développ
 This repository describes the Codex side of a larger cross-platform AI coding system.
 
 In the live setup:
-- `~/AGENTS.md` is the shared instruction entrypoint
-- `~/.codex/config.toml` loads it through `model_instructions_file`
-- `~/.codex/instructions.md` adds Codex-specific guidance
-- `~/.cursorrules` and project `.cursor/rules/` carry IDE-facing policy and delivery rules
+- `$SHARED_LAW_HOME/AGENTS.md` is the shared instruction entrypoint
+- `$CODEX_HOME/config.toml` loads it through `shared-law loader`
+- `$CODEX_HOME/instructions.md` adds Codex-specific guidance
+- `<cursor-global-rules>` and project `<project>/<project>/.cursor/rules/` carry IDE-facing policy and delivery rules
 - Antigravity carries broad skill and workflow execution through its own skills, workflows, and knowledge layers
 
 So the Codex configuration is not isolated.
@@ -82,7 +82,7 @@ Even inside the shared system, the Codex side still has its own strengths:
 
 The Cursor side is strongest when the workflow needs:
 - IDE-native rule enforcement
-- project-local `.cursor/rules/*.mdc`
+- project-local `<project>/<project>/.cursor/rules/*.mdc`
 - fast inline coding iteration
 - less friction while staying inside the editor
 

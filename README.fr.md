@@ -39,11 +39,11 @@ Ce dépôt existe pour transformer cet ensemble d’outils en un système cohér
 ## Instantané du système réel
 
 Ce dépôt s’appuie sur une configuration locale réellement opérationnelle. Au moment de la rédaction :
-- `30` skills Codex dans `~/.codex/skills`
-- `3` fichiers de mémoire globale dans `~/.codex/memories`
-- `10` commandes de gouvernance dans `.codex/commands`
-- `5` fichiers de mémoire projet dans `.codex/memory`
-- des fichiers d’état actifs dans `.codex/state`
+- `30` skills Codex dans `$CODEX_HOME/skills`
+- `3` fichiers de mémoire globale dans `$CODEX_HOME/memories`
+- `10` commandes de gouvernance dans `<project>/.codex/commands`
+- `5` fichiers de mémoire projet dans `<project>/.codex/memory`
+- des fichiers d’état actifs dans `<project>/.codex/state`
 
 Ce n’est donc pas une simple théorie : le système fonctionne déjà au niveau des :
 - règles
@@ -119,8 +119,8 @@ C’est un local AI engineering mesh coordonné.
 ## Structure cross-platform
 
 Dans l’environnement réel derrière ce dépôt :
-- `~/.codex/config.toml` charge `~/AGENTS.md` via `model_instructions_file`
-- `~/.codex/instructions.md` ajoute le routing, les profiles et les skills spécifiques à Codex
+- `$CODEX_HOME/config.toml` charge `$SHARED_LAW_HOME/AGENTS.md` via `shared-law loader`
+- `$CODEX_HOME/instructions.md` ajoute le routing, les profiles et les skills spécifiques à Codex
 - plusieurs outils de développement partagent la même loi de fonctionnement au sommet
 
 Le système est donc à la fois :

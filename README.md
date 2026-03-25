@@ -2,115 +2,166 @@
 
 [中文](README.zh-CN.md) | [English](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [Français](README.fr.md)
 
-Upgrade your AI tools from isolated assistants into a governed, memory-backed, evidence-driven engineering system.
+Upgrade your local AI tools from isolated assistants into one governed, memory-backed, evidence-driven engineering system.
 
-This repository is not a chat prompt pack. It is a repository-shaped operating model for upgrading local AI tools from “can answer” to “can run a disciplined engineering workflow.”
+This repository is not a prompt pack and not a skill collection. It is a public-safe operating model for turning multiple AI tools into one coordinated local engineering mesh.
 
-It reflects a bigger idea: Codex is not running alone. In this setup, Codex, Cursor, Antigravity, Claude Code, and OpenCode can be treated as specialized endpoints inside one cross-platform AI coding system, coordinated through a unified `AGENTS.md`.
-
-## Why this exists
+## Core idea
 
 Most people do not really have an AI system.
-They have several tools they keep switching between:
-- one for coding
-- one for research
-- one for browser-heavy work
-- one fallback tool when the first one feels weak
+They have several tools they keep switching between.
 
-That creates a familiar failure pattern:
-- repeated tool switching
-- duplicated instructions
-- unstable memory across tools
-- drifting output style and quality bar
-- dependence on whichever one product currently feels best
+This repository is built around a different idea:
 
-This repository exists to solve that problem.
+- one shared law
+- multiple specialized endpoints
+- one project runtime model
+- one quality bar across tools
 
-The goal is not to worship one tool.
-The goal is to make multiple local AI tools behave like one coordinated engineering system.
+The goal is not to make one tool worship-worthy.
+The goal is to make multiple tools work together without resetting your workflow every time you switch.
 
-## What this upgrades
+## System framework
 
-- `shared law`: one top-level operating model through `AGENTS.md`
-- `memory`: persistent working law, routing rules, and project state
-- `bootstrap`: project initialization for commands, memory, and risk posture
-- `orchestration`: explicit roles for planning, design, verification, and release
-- `planning`: parallel research and structured execution plans
-- `evidence`: completion requires proof instead of narrative
-- `release safety`: preview-first and publish gates
-- `evolution`: repeated wins can become native reusable skills
+This mesh is organized in layers.
 
-## Live system snapshot
+### 1. Shared law layer
+The top layer defines one common engineering law for every endpoint.
 
-This repository is based on a real working local setup. At the time of writing, the live environment behind it includes:
-- `30` Codex skills in `~/.codex/skills`
-- `3` global memory files in `~/.codex/memories`
-- `10` project governance commands in `.codex/commands`
-- `5` project memory files in `.codex/memory`
-- active project state files in `.codex/state`
+Examples:
+- shared operating rules
+- task discipline
+- quality bar
+- release discipline
+- evidence requirements
 
-That means this is not just a theory post. It is already operating at:
-- rules layer
-- skill layer
-- project runtime layer
-- state layer
-- evidence layer
+Anchor file:
+- `AGENTS.md`
 
-## Four-tool assessment on this machine
+### 2. Tool adapter layer
+Each AI tool keeps its own native strengths, but plugs into the same law.
 
-These are not universal benchmark scores. They are architecture-level assessments of one real local setup as of **March 25, 2026**.
+Adapters in this repository are framed around:
+- Codex
+- Claude
+- Cursor
+- Antigravity
+
+### 3. Capability layer
+This layer contains reusable capabilities instead of one-off prompts.
+
+Examples:
+- skills
+- rules
+- workflows
+- role packs
+- reviewers
+- deploy / QA / security helpers
+
+### 4. Project runtime layer
+This layer makes the system usable inside a real repo.
+
+Examples:
+- project commands
+- project memory
+- project state
+- evidence collection
+- execution checkpoints
+
+### 5. Evolution layer
+This layer turns repeated wins into reusable system behavior.
+
+Examples:
+- memory accumulation
+- reusable patterns
+- promoted workflows
+- specialist review loops
+
+## Four-tool structure and evaluation
+
+These scores are not universal benchmarks. They are architecture-level assessments of one real local setup as of **March 25, 2026**.
 
 ### Codex — 92/100
-**Role:** primary engineering execution and governance hub.
+**Position in the mesh:** execution core and governance core.
 
-**Strengths**
-- strongest local execution center in this setup
-- governed skills, commands, release discipline, and evidence workflow
-- best fit for turning plans into disciplined project delivery
+**Structural layers**
+- adapter layer: Codex configuration and endpoint routing
+- capability layer: governed skills, reviewers, execution roles
+- runtime layer: command wrappers, state, evidence, release gates
+- evolution layer: skill promotion and reusable engineering patterns
 
-**Limitations**
-- default product smoothness and automation feel can still be less natural than Claude in some workflows
+**What it is best at**
+- disciplined local execution
+- terminal-first engineering flow
+- release and publish governance
+- turning plans into deliverable project work
+
+**Current limitation**
+- product smoothness and built-in automation feel can still be less polished than Claude in some workflows
 
 ### Claude — 90/100
-**Role:** workflow methodology engine and reference stack.
+**Position in the mesh:** workflow methodology engine and benchmark layer.
 
-**Strengths**
-- strongest command-and-workflow feel
-- strong modular thinking, review habits, and collaboration ergonomics
-- still the most mature benchmark for coding workflow design
+**Structural layers**
+- adapter layer: shared-law alignment and workflow compatibility
+- capability layer: command culture, modular review habits, collaboration patterns
+- runtime layer: strong methodology, less deep execution governance in this setup
+- evolution layer: benchmark source for workflow maturity
 
-**Limitations**
-- in this specific local system, it is not as deeply integrated into execution governance as Codex
+**What it is best at**
+- workflow ergonomics
+- modular thinking
+- review culture
+- polished collaboration feel
+
+**Current limitation**
+- in this local system, it is not the deepest execution/governance endpoint
 
 ### Cursor — 89/100
-**Role:** IDE battlefield and editor-native implementation layer.
+**Position in the mesh:** IDE battlefield and editor-native implementation layer.
 
-**Strengths**
-- closest to the coding surface
-- strong project rule density inside the editor
-- ideal for reducing day-to-day development friction
+**Structural layers**
+- adapter layer: editor-facing rule alignment
+- capability layer: project-local editor rules and implementation guidance
+- runtime layer: fast inline coding and low-friction daily development
+- evolution layer: project-level coding habits and local delivery patterns
 
-**Limitations**
-- weaker system-governance and operating-system feel than Codex or Antigravity
+**What it is best at**
+- staying close to the coding surface
+- reducing day-to-day development friction
+- keeping project rules near the editor
+
+**Current limitation**
+- weaker operating-system feel and cross-tool governance depth than Codex or Antigravity
 
 ### Antigravity — 91/100
-**Role:** broad capability expansion platform.
+**Position in the mesh:** broad capability platform and expansion layer.
 
-**Strengths**
-- wide coverage across browsing, artifacts, knowledge, and extended skills
-- feels more like a platform than a single tool
-- excellent for capability expansion and cross-domain work
+**Structural layers**
+- adapter layer: platform-facing workflow alignment
+- capability layer: broad skills, browser work, knowledge, artifacts
+- runtime layer: strong cross-domain execution and workflow expansion
+- evolution layer: broad reusable capability growth
 
-**Limitations**
-- breadth can introduce noise
-- for the core engineering path, it is not always as steady as Codex
+**What it is best at**
+- expanding beyond narrow coding tasks
+- browser-heavy and artifact-heavy work
+- acting more like a platform than a single tool
 
-### Overall local system — 91/100
-This machine is strongest not because one single AI is unbeatable, but because the tools have been organized into one system:
+**Current limitation**
+- breadth can introduce noise; on the core engineering path it is not always as steady as Codex
+
+## Overall system evaluation — 91/100
+
+This machine is strong not because one tool is unbeatable.
+It is strong because the tools have been organized into one system.
+
+That system now has:
 - shared operating law
-- multiple specialized endpoints
+- specialized tool endpoints
 - project memory
 - execution gates
+- evidence discipline
 - cross-platform consistency
 
 The most accurate summary is:
@@ -120,18 +171,50 @@ The most accurate summary is:
 This is no longer a “pick one tool” setup.
 It is a coordinated local AI engineering mesh.
 
-## Cross-platform setup
+## Public-safe implementation view
 
-In the live environment behind this repository:
-- `~/.codex/config.toml` loads `~/AGENTS.md` through `model_instructions_file`
-- `~/.codex/instructions.md` adds Codex-specific routing, profiles, and skill guidance
-- the same top-level operating law is shared across multiple coding tools
+To keep this repository safe to publish, local machine details are abstracted into generic layers instead of personal filesystem layout.
 
-This means the system here is both:
-- tool-native in execution
-- cross-platform in policy
+Public-safe labels used in this repository:
+- `$SHARED_LAW_HOME/AGENTS.md`
+- `$CODEX_HOME/config.toml`
+- `$CODEX_HOME/instructions.md`
+- `$CODEX_HOME/skills/`
+- `$CODEX_HOME/memories/`
+- `<project>/.codex/commands/`
+- `<project>/.codex/memory/`
+- `<project>/.codex/state/`
+- `<project>/.cursor/rules/`
+- `<antigravity-home>/skills|workflows|knowledge`
 
-It also means your workflow does not need to reset every time you switch tools.
+The purpose is to publish the system design without leaking personal machine structure.
+
+## Live system snapshot (sanitized)
+
+This repository is based on a real working setup. In sanitized form, the live environment behind it includes:
+- 30 Codex skills
+- 3 global memory files
+- 10 project governance commands
+- 5 project memory files
+- active project state files
+
+That means this is not only a concept. It is already operating at:
+- rules layer
+- capability layer
+- project runtime layer
+- state layer
+- evidence layer
+
+## Cross-platform design
+
+In this repository’s model:
+- one shared law sits at the top
+- Codex acts as the strongest execution endpoint
+- Claude remains a strong workflow benchmark and compatible peer
+- Cursor acts as the IDE-native delivery layer
+- Antigravity acts as the capability-expansion platform
+
+So the workflow does not have to restart from zero every time you switch tools.
 
 See [CROSS-PLATFORM.md](docs/CROSS-PLATFORM.md).
 
@@ -143,9 +226,9 @@ As of **March 23, 2026**, Anthropic's latest public Claude coding stack is led b
 
 This repository does **not** claim that a local tool automatically beats Claude on raw model capability.
 
-It makes a narrower and more useful claim:
+Its claim is narrower and more practical:
 
-If you give local AI tools a stronger operating system layer, they become much more competitive on long-horizon engineering execution because the workflow stops depending on one perfect prompt or one permanently available product.
+Once local tools are upgraded with memory, governance, evidence, and release discipline, they become much more competitive on long-horizon engineering execution.
 
 See [COMPARE-WITH-CLAUDE.md](docs/COMPARE-WITH-CLAUDE.md).
 
@@ -181,14 +264,14 @@ See [REPO-MAP.md](docs/REPO-MAP.md).
 This repository includes reusable templates for:
 - global memory
 - project memory
-- Cursor project rules
+- Cursor rule patterns
 - Antigravity workflow and knowledge stubs
 - policy defaults
 
 Adoption paths:
 - single-tool first
 - dual-tool setup
-- full mesh: Codex + Cursor + Antigravity + Claude under one shared law
+- full mesh: Codex + Claude + Cursor + Antigravity under one shared law
 
 ## References
 

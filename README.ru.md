@@ -39,11 +39,11 @@
 ## Снимок реальной системы
 
 Этот репозиторий основан на реально работающей локальной конфигурации. На момент написания README в ней есть:
-- `30` skills в `~/.codex/skills`
-- `3` глобальных memory-файла в `~/.codex/memories`
-- `10` governance-команд в `.codex/commands`
-- `5` project memory-файлов в `.codex/memory`
-- активные state-файлы в `.codex/state`
+- `30` skills в `$CODEX_HOME/skills`
+- `3` глобальных memory-файла в `$CODEX_HOME/memories`
+- `10` governance-команд в `<project>/.codex/commands`
+- `5` project memory-файлов в `<project>/.codex/memory`
+- активные state-файлы в `<project>/.codex/state`
 
 То есть это не теория, а уже работающая система на уровнях:
 - rules
@@ -119,8 +119,8 @@
 ## Кроссплатформенная структура
 
 В реальной среде за этим репозиторием:
-- `~/.codex/config.toml` загружает `~/AGENTS.md` через `model_instructions_file`
-- `~/.codex/instructions.md` отвечает за Codex-specific routing, profiles и guidance по skills
+- `$CODEX_HOME/config.toml` загружает `$SHARED_LAW_HOME/AGENTS.md` через `shared-law loader`
+- `$CODEX_HOME/instructions.md` отвечает за Codex-specific routing, profiles и guidance по skills
 - несколько coding tools используют один верхнеуровневый operating law
 
 Это означает:

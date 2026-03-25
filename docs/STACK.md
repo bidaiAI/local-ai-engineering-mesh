@@ -9,8 +9,8 @@
 - `multi_agent`
 - local terminal execution
 - workspace sandboxing
-- `model_instructions_file -> ~/AGENTS.md`
-- Codex-specific supplement via `~/.codex/instructions.md`
+- `shared-law loader -> $SHARED_LAW_HOME/AGENTS.md`
+- Codex-specific supplement via `$CODEX_HOME/instructions.md`
 
 ## Workflow layer
 

@@ -26,7 +26,7 @@ It is a networked local AI engineering system that can work for one tool first, 
 ```mermaid
 flowchart TD
     A["Shared Law<br/>AGENTS.md"] --> B["Codex Adapter Layer<br/>config.toml + instructions.md"]
-    A --> C["Cursor Layer<br/>.cursorrules + .cursor/rules"]
+    A --> C["Cursor Layer<br/><cursor-global-rules> + <project>/.cursor/rules"]
     A --> C2["Antigravity Layer<br/>skills + workflows + knowledge"]
     A --> C3["Claude / OpenCode<br/>peer endpoints"]
 
@@ -43,9 +43,9 @@ flowchart TD
     E --> E4["TS / Python / Go reviewers"]
 
     B --> F["Project Runtime"]
-    F --> F1[".codex/commands"]
-    F --> F2[".codex/memory"]
-    F --> F3[".codex/state"]
+    F --> F1["<project>/.codex/commands"]
+    F --> F2["<project>/.codex/memory"]
+    F --> F3["<project>/.codex/state"]
     F --> F4[".codex/evidence"]
 
     F1 --> G["preflight"]

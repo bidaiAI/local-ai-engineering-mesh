@@ -8,5 +8,5 @@ Use them when you want:
 - Cursor to follow the same operating law as Codex and Antigravity
 
 Suggested placement:
-- global: `~/.cursorrules`
-- project: `.cursor/rules/`
+- global: `<cursor-global-rules>`
+- project: `<project>/<project>/.cursor/rules/`

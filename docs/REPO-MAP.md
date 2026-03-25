@@ -1,53 +1,56 @@
 # Repository Map
 
+## Public framing
+
+This repository is organized around three public-safe views:
+- overall system layers
+- per-tool structure layers
+- reusable templates without personal machine paths
+
 ## Root
 
 ### `README.md`
-Primary English overview with multilingual navigation.
+Main English readme with the full system framework, four-tool evaluation, and sanitized public structure.
 
-### `README.zh-CN.md` / `README.ru.md` / `README.ja.md` / `README.fr.md`
-Localized readme variants for Chinese, Russian, Japanese, and French readers.
+### `README.zh-CN.md`
+Chinese readme with the full framework explanation and four-tool system assessment.
+
+### `README.ru.md` / `README.ja.md` / `README.fr.md`
+Localized overview variants.
 
 ## `docs/`
 
 ### `ARCHITECTURE.md`
 Layered operating-model design.
 
-### `COMPARE-WITH-CLAUDE.md`
-Comparison against the latest public Claude workflow baseline, now with multilingual summary blocks.
-
 ### `CROSS-PLATFORM.md`
-How Codex, Cursor, Antigravity, Claude Code, and other endpoints share one operating law, now with multilingual summary blocks.
+How one shared law coordinates Codex, Claude, Cursor, and Antigravity.
+
+### `COMPARE-WITH-CLAUDE.md`
+What this system claims relative to the latest public Claude workflow baseline.
 
 ### `EXECUTION-LOOP.md`
-The core execution loop: research -> plan -> execute -> verify.
+The operating loop: research -> plan -> execute -> verify.
 
 ### `FRAMEWORK-DIAGRAM.md`
-Diagram-oriented explanation of the mesh and file structure.
+Diagram-oriented mesh view with public-safe structure labels.
 
 ### `STACK.md`
-Tooling and subscription stack overview.
+Tooling and stack overview in sanitized form.
 
 ## `templates/`
 
 ### `templates/global-memory/`
-Global operating-memory seeds.
+Global memory seeds.
 
 ### `templates/project-memory/`
-Project-level memory templates.
+Project memory templates.
 
 ### `templates/cursor/`
-Cursor rule templates.
+Cursor rule templates with public-safe path naming.
 
 ### `templates/antigravity/`
 Antigravity workflow and knowledge templates.
 
 ### `policy.env.example`
 Shared policy defaults.
-
-## Practical usage
-
-1. read `README.md`
-2. read `docs/CROSS-PLATFORM.md`
-3. read `docs/COMPARE-WITH-CLAUDE.md`
-4. inspect `templates/` for the tool you want to adopt first

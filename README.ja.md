@@ -39,11 +39,11 @@
 ## 実環境のスナップショット
 
 このリポジトリは、実際に動いているローカル環境をもとにしています。README執筆時点での構成は次の通りです。
-- `~/.codex/skills` に `30` 個の Codex skills
-- `~/.codex/memories` に `3` 個のグローバル memory ファイル
-- `.codex/commands` に `10` 個の governance commands
-- `.codex/memory` に `5` 個の project memory ファイル
-- `.codex/state` に state ファイル群
+- `$CODEX_HOME/skills` に `30` 個の Codex skills
+- `$CODEX_HOME/memories` に `3` 個のグローバル memory ファイル
+- `<project>/.codex/commands` に `10` 個の governance commands
+- `<project>/.codex/memory` に `5` 個の project memory ファイル
+- `<project>/.codex/state` に state ファイル群
 
 つまり、これは単なるアイデアではなく、すでに以下の層で稼働しています。
 - rules layer
@@ -119,8 +119,8 @@
 ## クロスプラットフォーム構成
 
 実環境では:
-- `~/.codex/config.toml` が `model_instructions_file` 経由で `~/AGENTS.md` を読み込む
-- `~/.codex/instructions.md` が Codex 固有の routing、profiles、skills guidance を加える
+- `$CODEX_HOME/config.toml` が `shared-law loader` 経由で `$SHARED_LAW_HOME/AGENTS.md` を読み込む
+- `$CODEX_HOME/instructions.md` が Codex 固有の routing、profiles、skills guidance を加える
 - 複数の coding tools が同じ上位 operating law を共有する
 
 つまり:
