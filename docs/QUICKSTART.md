@@ -74,3 +74,13 @@ cp templates/cursor/evidence-release-gate.mdc /path/to/your/project/.cursor/rule
 cp templates/antigravity/local-ai-mesh-workflow.md /path/to/your/antigravity/workflows/
 cp templates/antigravity/knowledge-stub.md /path/to/your/antigravity/knowledge/
 ```
+
+
+## Highest-performance general combo
+
+For most software engineering work, the strongest general combination is:
+- Claude for planning and review
+- Cursor for editor-native delivery
+- Codex for governed execution and runtime discipline
+
+Add Antigravity when the workflow becomes browser-heavy, artifact-heavy, or cross-domain.

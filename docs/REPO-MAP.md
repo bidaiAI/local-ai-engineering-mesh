@@ -50,6 +50,12 @@ Tooling and stack overview in sanitized form.
 ### `QUICKSTART.md`
 Beginner-friendly adoption guide for single-tool, dual-tool, and full-mesh setup.
 
+### `TOOL-LAYERS.md`
+Detailed next-layer breakdown for Codex, Claude, Cursor, and Antigravity.
+
+### `WORKFLOWS-AND-COMBOS.md`
+What the system can actually do, original-vs-mesh comparison, and best-performance combinations.
+
 ### `scripts/setup-project-runtime.sh`
 Project bootstrap helper for creating memory, state, and Cursor rule skeletons.
 

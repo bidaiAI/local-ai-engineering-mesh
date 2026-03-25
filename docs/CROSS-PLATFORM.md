@@ -25,7 +25,7 @@ In the live setup:
 - `$SHARED_LAW_HOME/AGENTS.md` is the shared instruction entrypoint
 - `$CODEX_HOME/config.toml` loads it through `shared-law loader`
 - `$CODEX_HOME/instructions.md` adds Codex-specific guidance
-- `<cursor-global-rules>` and project `<project>/<project>/.cursor/rules/` carry IDE-facing policy and delivery rules
+- `<cursor-global-rules>` and project `<project>/.cursor/rules/` carry IDE-facing policy and delivery rules
 - Antigravity carries broad skill and workflow execution through its own skills, workflows, and knowledge layers
 
 So the Codex configuration is not isolated.
@@ -82,7 +82,7 @@ Even inside the shared system, the Codex side still has its own strengths:
 
 The Cursor side is strongest when the workflow needs:
 - IDE-native rule enforcement
-- project-local `<project>/<project>/.cursor/rules/*.mdc`
+- project-local `<project>/.cursor/rules/*.mdc`
 - fast inline coding iteration
 - less friction while staying inside the editor
 

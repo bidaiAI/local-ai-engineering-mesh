@@ -8,6 +8,13 @@
 
 这不是 prompt 包，也不是 skill 收藏夹。它是一套可公开复用的 operating model，用来把多个 AI 工具组织成一个可协同的本地工程 mesh。
 
+## TL;DR
+
+- 只有一个工具，也可以先开始。
+- 先补 shared law、project memory、evidence discipline。
+- 对大多数软件工程场景，`Codex + Cursor + Claude` 是最高性能通用组合。
+- 当你需要更强的 browser / artifact / 跨域能力时，再接入 Antigravity。
+
 ## 这个仓库为什么存在
 
 大多数人并没有真正的 AI 系统，只是在多个工具之间不断切换。
@@ -67,6 +74,17 @@ browser / artifacts / knowledge / workflows"]
 - 可复用的 memory / rules / workflow 模板
 - 治理、记忆、bootstrap 等核心制度文档
 - 跨平台协同与 Claude 对照说明
+
+## 这套系统真正能做什么
+
+- 用一套 operating law 协调多个工具
+- 保留项目记忆和状态
+- 把任务路由到最合适的端点
+- 在完成前强制要求 evidence
+- 即使只有一个工具，也能先改善 workflow
+- 之后再逐步扩展成更高性能的多工具组合
+
+参见 [TOOL-LAYERS.md](docs/TOOL-LAYERS.md) 和 [WORKFLOWS-AND-COMBOS.md](docs/WORKFLOWS-AND-COMBOS.md)。
 
 ## 总体框架层
 
@@ -336,6 +354,8 @@ local-ai-engineering-mesh/
 ├── docs/
 │   ├── ARCHITECTURE.md
 │   ├── QUICKSTART.md
+│   ├── TOOL-LAYERS.md
+│   ├── WORKFLOWS-AND-COMBOS.md
 │   ├── BOOTSTRAP-SPEC.md
 │   ├── MEMORY-SCHEMA.md
 │   ├── OPERATING-CHARTER.md

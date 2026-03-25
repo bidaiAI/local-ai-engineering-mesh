@@ -8,56 +8,64 @@ Use this file as the source for a repository diagram or overview image.
 
 ## Image goal
 
-Show that this repository is not a prompt pack.  
-It is a networked local AI engineering system that can work for one tool first, or for multiple tools together, with:
-
-- shared law
-- multi-tool endpoints
-- Codex execution layer
-- project runtime layer
-- memory/state/evidence/release loops
+Show that this repository is not a prompt pack.
+It is a networked local AI engineering system with a shared law at the top, specialized tool layers in the middle, and project runtime discipline at the bottom.
 
 ## Mermaid version
 
 ```mermaid
 flowchart TD
-    A["Shared Law<br/>AGENTS.md"] --> B["Codex Adapter Layer<br/>config.toml + instructions.md"]
-    A --> C["Cursor Layer<br/><cursor-global-rules> + <project>/.cursor/rules"]
-    A --> C2["Antigravity Layer<br/>skills + workflows + knowledge"]
-    A --> C3["Claude / OpenCode<br/>peer endpoints"]
+    A["Shared Law
+AGENTS.md"]
 
-    B --> D["Core Skills"]
-    D --> D1["execution-orchestrator"]
-    D --> D2["architecture-gatekeeper"]
-    D --> D3["reality-check-qa"]
-    D --> D4["release-risk-governor"]
+    subgraph COD["Codex"]
+      B1["config + instructions"]
+      B2["governed skills"]
+      B3["reviewers + routing"]
+      B4["runtime commands + evidence"]
+    end
 
-    B --> E["Upgrade Layers"]
-    E --> E1["state-store-memory"]
-    E --> E2["codex-skill-manager"]
-    E --> E3["build-resolver"]
-    E --> E4["TS / Python / Go reviewers"]
+    subgraph CLA["Claude"]
+      C1["project law"]
+      C2["command culture"]
+      C3["review + planning"]
+      C4["workflow benchmark"]
+    end
 
-    B --> F["Project Runtime"]
-    F --> F1["<project>/.codex/commands"]
-    F --> F2["<project>/.codex/memory"]
-    F --> F3["<project>/.codex/state"]
-    F --> F4[".codex/evidence"]
+    subgraph CUR["Cursor"]
+      D1["editor rules"]
+      D2["inline implementation"]
+      D3["project-local delivery"]
+    end
 
-    F1 --> G["preflight"]
-    F1 --> H["pre-edit"]
-    F1 --> I["pre-publish"]
-    F1 --> J["pre-deploy"]
-    F1 --> K["post-implementation"]
-    F1 --> L["save/show state + qa-score"]
+    subgraph ANT["Antigravity"]
+      E1["skills"]
+      E2["workflows"]
+      E3["knowledge"]
+      E4["browser + artifacts"]
+    end
 
-    F --> M["Execution Loop"]
-    M --> M1["research-first"]
-    M --> M2["structured plan"]
-    M --> M3["mechanical execution"]
-    M --> M4["evidence-backed completion"]
-    M --> M5["release discipline"]
-    M --> M6["reusable skill promotion"]
+    A --> B1
+    A --> C1
+    A --> D1
+    A --> E1
+
+    B1 --> B2 --> B3 --> B4
+    C1 --> C2 --> C3 --> C4
+    D1 --> D2 --> D3
+    E1 --> E2 --> E3 --> E4
+
+    B4 --> F["Project Runtime
+<project>/.codex/commands
+<project>/.codex/memory
+<project>/.codex/state"]
+    C3 --> G["Planning + Review"]
+    D3 --> H["Editor Delivery"]
+    E4 --> I["Research + Artifacts"]
+
+    F --> J["Evidence Gate"]
+    F --> K["Release Discipline"]
+    F --> L["Reusable Patterns"]
 ```
 
 ## Simple file-tree version
@@ -67,16 +75,20 @@ local-ai-engineering-mesh/
 ├── README.md
 ├── docs/
 │   ├── ARCHITECTURE.md
-│   ├── QUICKSTART.md
 │   ├── BOOTSTRAP-SPEC.md
 │   ├── MEMORY-SCHEMA.md
 │   ├── OPERATING-CHARTER.md
+│   ├── TOOL-LAYERS.md
+│   ├── WORKFLOWS-AND-COMBOS.md
+│   ├── QUICKSTART.md
 │   ├── COMPARE-WITH-CLAUDE.md
 │   ├── CROSS-PLATFORM.md
 │   ├── EXECUTION-LOOP.md
 │   ├── REPO-MAP.md
 │   ├── STACK.md
 │   └── FRAMEWORK-DIAGRAM.md
+├── scripts/
+│   └── setup-project-runtime.sh
 └── templates/
     ├── AGENTS.example.md
     ├── antigravity/
@@ -90,10 +102,8 @@ local-ai-engineering-mesh/
 
 ## Suggested caption
 
-This is the point of the repository:
-
 - top layer: shared operating law
-- middle layer: specialized local AI endpoints
-- bottom layer: project runtime with commands, memory, state, and evidence
+- middle layer: tool-specific structure layers
+- bottom layer: project runtime, evidence, and release discipline
 
 That is what turns separate AI tools into a governed engineering mesh.

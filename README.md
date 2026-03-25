@@ -8,6 +8,13 @@ A public-safe operating model for turning local AI tools into one governed, memo
 
 This repository is not a prompt pack and not a skill collection. It is a structured reference for building a multi-tool local AI workflow with shared rules, explicit roles, project runtime discipline, and reusable system patterns.
 
+## TL;DR
+
+- Start with one tool if that is all you have.
+- Add shared law, project memory, and evidence discipline first.
+- Grow into Codex + Cursor + Claude for the highest-performance general software workflow.
+- Add Antigravity when you need broader browser, artifact, and cross-domain capability.
+
 ## Why this repository exists
 
 Most people do not really have an AI system.
@@ -69,6 +76,17 @@ browser / artifacts / knowledge / workflows"]
 - reusable templates for memory, rules, and workflows
 - operating documents for governance, memory, and bootstrap
 - diagrams and comparison notes for cross-platform usage
+
+## What this system can actually do
+
+- coordinate multiple tools under one operating law
+- preserve project memory and state
+- route work to the best-fit endpoint
+- enforce evidence before completion
+- improve single-tool usage without requiring a full mesh
+- scale into a higher-performance multi-tool setup later
+
+See [TOOL-LAYERS.md](docs/TOOL-LAYERS.md) and [WORKFLOWS-AND-COMBOS.md](docs/WORKFLOWS-AND-COMBOS.md).
 
 ## System framework
 
@@ -339,6 +357,8 @@ local-ai-engineering-mesh/
 ├── docs/
 │   ├── ARCHITECTURE.md
 │   ├── QUICKSTART.md
+│   ├── TOOL-LAYERS.md
+│   ├── WORKFLOWS-AND-COMBOS.md
 │   ├── BOOTSTRAP-SPEC.md
 │   ├── MEMORY-SCHEMA.md
 │   ├── OPERATING-CHARTER.md
