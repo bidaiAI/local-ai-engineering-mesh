@@ -264,6 +264,17 @@ browser / artifacts / knowledge / workflows"]
 - 状态层
 - 证据层
 
+## 公开技能包
+
+仓库还包含一组公开安全的原生技能子集，位于 [`skills/`](skills/README.md)：
+- `state-store-memory`
+- `safe-pr-flow`
+- `governed-deploy`
+- `visual-evidence`
+- `project-bootstrap`
+
+这些技能分享的是系统行为能力，而不是私有机器状态。
+
 ## 工具模板
 
 仓库现在已经包含四个主要工具的公开安全模板层：
@@ -351,6 +362,13 @@ local-ai-engineering-mesh/
 ├── LICENSE
 ├── scripts/
 │   └── setup-project-runtime.sh
+├── skills/
+│   ├── README.md
+│   ├── state-store-memory/
+│   ├── safe-pr-flow/
+│   ├── governed-deploy/
+│   ├── visual-evidence/
+│   └── project-bootstrap/
 ├── docs/
 │   ├── ARCHITECTURE.md
 │   ├── QUICKSTART.md

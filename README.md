@@ -267,6 +267,17 @@ That means this is not only conceptual. It already operates at:
 - state layer
 - evidence layer
 
+## Public skills pack
+
+The repository also includes a public-safe subset of original native skills under [`skills/`](skills/README.md):
+- `state-store-memory`
+- `safe-pr-flow`
+- `governed-deploy`
+- `visual-evidence`
+- `project-bootstrap`
+
+These are meant to share distinctive system behavior, not private machine state.
+
 ## Tool templates
 
 The repository now includes public-safe starter templates for all four primary tools:
@@ -354,6 +365,13 @@ local-ai-engineering-mesh/
 ├── LICENSE
 ├── scripts/
 │   └── setup-project-runtime.sh
+├── skills/
+│   ├── README.md
+│   ├── state-store-memory/
+│   ├── safe-pr-flow/
+│   ├── governed-deploy/
+│   ├── visual-evidence/
+│   └── project-bootstrap/
 ├── docs/
 │   ├── ARCHITECTURE.md
 │   ├── QUICKSTART.md

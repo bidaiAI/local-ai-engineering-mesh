@@ -89,6 +89,13 @@ local-ai-engineering-mesh/
 │   └── FRAMEWORK-DIAGRAM.md
 ├── scripts/
 │   └── setup-project-runtime.sh
+├── skills/
+│   ├── README.md
+│   ├── state-store-memory/
+│   ├── safe-pr-flow/
+│   ├── governed-deploy/
+│   ├── visual-evidence/
+│   └── project-bootstrap/
 └── templates/
     ├── AGENTS.example.md
     ├── antigravity/

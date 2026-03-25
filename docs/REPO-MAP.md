@@ -88,3 +88,21 @@ Shared policy defaults.
 
 ### `LICENSE`
 MIT open-source license for public reuse.
+
+
+## `skills/`
+
+### `state-store-memory/`
+Durable project state and resumable event logging.
+
+### `safe-pr-flow/`
+Explicit staged-diff and verification gate before publish.
+
+### `governed-deploy/`
+Deployment routing and provider selection guardrails.
+
+### `visual-evidence/`
+Visual QA evidence collection with narrow-capture preference.
+
+### `project-bootstrap/`
+Project profiling, command discovery, and evidence-path seeding.
