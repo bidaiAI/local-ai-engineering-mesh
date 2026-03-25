@@ -35,6 +35,15 @@ The operating loop: research -> plan -> execute -> verify.
 ### `FRAMEWORK-DIAGRAM.md`
 Diagram-oriented mesh view with public-safe structure labels.
 
+### `OPERATING-CHARTER.md`
+Default operating laws for how the system should behave.
+
+### `MEMORY-SCHEMA.md`
+How memory is layered and promoted across global, project, module, and session scopes.
+
+### `BOOTSTRAP-SPEC.md`
+What a repo should discover and establish before deeper implementation begins.
+
 ### `STACK.md`
 Tooling and stack overview in sanitized form.
 

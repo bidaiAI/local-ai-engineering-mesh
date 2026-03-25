@@ -1,5 +1,7 @@
 # Local AI Engineering Mesh
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) ![Mesh](https://img.shields.io/badge/System-Local%20AI%20Engineering%20Mesh-6f42c1) ![Tools](https://img.shields.io/badge/Tools-Codex%20%7C%20Claude%20%7C%20Cursor%20%7C%20Antigravity-blue) ![Status](https://img.shields.io/badge/Status-Public--Safe-success)
+
 [中文](README.zh-CN.md) | [English](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [Français](README.fr.md)
 
 把本地 AI 工具从彼此割裂的助手，升级成一套有治理、有记忆、有证据闭环的工程系统。
@@ -269,6 +271,14 @@ browser / artifacts / knowledge / workflows"]
 
 参见 [COMPARE-WITH-CLAUDE.md](docs/COMPARE-WITH-CLAUDE.md)。
 
+## 核心制度文档
+
+下面这些文档让这个仓库更像一套真实在运行的系统，而不是零散笔记：
+- [OPERATING-CHARTER.md](docs/OPERATING-CHARTER.md)
+- [MEMORY-SCHEMA.md](docs/MEMORY-SCHEMA.md)
+- [BOOTSTRAP-SPEC.md](docs/BOOTSTRAP-SPEC.md)
+- [ARCHITECTURE.md](docs/ARCHITECTURE.md)
+
 ## 仓库结构
 
 ```text
@@ -280,6 +290,9 @@ local-ai-engineering-mesh/
 ├── README.fr.md
 ├── docs/
 │   ├── ARCHITECTURE.md
+│   ├── BOOTSTRAP-SPEC.md
+│   ├── MEMORY-SCHEMA.md
+│   ├── OPERATING-CHARTER.md
 │   ├── COMPARE-WITH-CLAUDE.md
 │   ├── CROSS-PLATFORM.md
 │   ├── EXECUTION-LOOP.md

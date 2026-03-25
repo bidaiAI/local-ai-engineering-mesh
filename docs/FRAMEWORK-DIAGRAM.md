@@ -71,6 +71,9 @@ local-ai-engineering-mesh/
 ├── README.md
 ├── docs/
 │   ├── ARCHITECTURE.md
+│   ├── BOOTSTRAP-SPEC.md
+│   ├── MEMORY-SCHEMA.md
+│   ├── OPERATING-CHARTER.md
 │   ├── COMPARE-WITH-CLAUDE.md
 │   ├── CROSS-PLATFORM.md
 │   ├── EXECUTION-LOOP.md

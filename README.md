@@ -1,5 +1,7 @@
 # Local AI Engineering Mesh
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) ![Mesh](https://img.shields.io/badge/System-Local%20AI%20Engineering%20Mesh-6f42c1) ![Tools](https://img.shields.io/badge/Tools-Codex%20%7C%20Claude%20%7C%20Cursor%20%7C%20Antigravity-blue) ![Status](https://img.shields.io/badge/Status-Public--Safe-success)
+
 [中文](README.zh-CN.md) | [English](README.md) | [Русский](README.ru.md) | [日本語](README.ja.md) | [Français](README.fr.md)
 
 Upgrade your local AI tools from isolated assistants into one governed, memory-backed, evidence-driven engineering system.
@@ -287,6 +289,9 @@ local-ai-engineering-mesh/
 ├── README.fr.md
 ├── docs/
 │   ├── ARCHITECTURE.md
+│   ├── BOOTSTRAP-SPEC.md
+│   ├── MEMORY-SCHEMA.md
+│   ├── OPERATING-CHARTER.md
 │   ├── COMPARE-WITH-CLAUDE.md
 │   ├── CROSS-PLATFORM.md
 │   ├── EXECUTION-LOOP.md
@@ -302,6 +307,14 @@ local-ai-engineering-mesh/
 ```
 
 See [REPO-MAP.md](docs/REPO-MAP.md).
+
+## Core operating documents
+
+These are the documents that make the repository feel like a real working system rather than a collection of notes:
+- [OPERATING-CHARTER.md](docs/OPERATING-CHARTER.md)
+- [MEMORY-SCHEMA.md](docs/MEMORY-SCHEMA.md)
+- [BOOTSTRAP-SPEC.md](docs/BOOTSTRAP-SPEC.md)
+- [ARCHITECTURE.md](docs/ARCHITECTURE.md)
 
 ## Included templates
 
