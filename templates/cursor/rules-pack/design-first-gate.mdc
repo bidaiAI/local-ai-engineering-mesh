@@ -1,0 +1,50 @@
+---
+description: Use before writing any code for a new feature, project, or significant change. Enforces design approval before implementation.
+globs:
+alwaysApply: true
+---
+
+# Design-First Gate
+
+Pipeline position: **① THIS** → ② plan → ③ TDD → ④ review → ⑤ ship | Priority 10
+
+No code, no scaffolding, no implementation until a design is presented and the user approves it.
+
+## The Hard Gate
+
+BEFORE code writing, file scaffolding, dependency installation, or plan creation — YOU MUST:
+1. Understand what the user wants
+2. Present a design
+3. Get explicit approval
+
+**This applies to EVERY project regardless of perceived simplicity.**
+
+For complex or ambiguous tasks, use `SwitchMode → plan` to enter Plan Mode for collaborative design before implementation.
+
+## Bypass
+
+User can skip with: "skip design" / "just do it" / "直接做" / providing a complete spec.
+
+## The Process
+
+1. **Explore Context (Silent)** — Read files, docs, recent commits before asking anything.
+2. **Ask Clarifying Questions** — One at a time. Multiple choice preferred. Focus on purpose, constraints, success criteria. Flag scope too large → suggest decomposition.
+3. **Propose Approaches** — 2-3 options with trade-offs. Lead with recommendation.
+4. **Present Design** — Scale to complexity. Cover: architecture, components, data flow, error handling, testing strategy.
+5. **Get Approval** — Wait for explicit approval. If changes requested, revise and re-present. After approval → proceed to planning.
+
+## Anti-Pattern: "Too Simple To Need A Design"
+
+"Simple" projects are where unexamined assumptions cause the most wasted work. The design can be a few sentences, but you MUST present it and get approval.
+
+## In Existing Codebases
+
+- Explore current structure first. Follow existing patterns.
+- Include targeted improvements only where they affect the current work.
+- Don't propose unrelated refactoring.
+
+## Design Principles
+
+- **YAGNI ruthlessly** — Remove unnecessary features
+- **Isolation and clarity** — Smaller units with clear boundaries
+- **Incremental validation** — Present, get approval, move on

@@ -1,0 +1,9 @@
+---
+alwaysApply: true
+---
+
+# Evidence Release Gate
+
+- Do not call substantial work done without tests, logs, screenshots, or explicit manual verification notes.
+- Before publish or deploy, confirm scope, staged files, and rollback thinking.
+- Separate verified, partially verified, and unverified claims.

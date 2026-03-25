@@ -1,0 +1,65 @@
+---
+description: Use when encountering bugs, test failures, regressions, flaky behavior, or unclear technical issues. Root-cause first, then minimal fix with regression test.
+globs:
+alwaysApply: false
+---
+
+# Systematic Debug Discipline
+
+Pipeline position: Bug encountered → **⑥ THIS** → ③ tdd-discipline (regression test) | Priority 35 | On-demand
+
+Never jump to fixes before identifying the root cause. If the issue is not yet explained, you are still investigating, not fixing.
+
+## The Four Phases
+
+### Phase 1: Reproduce & Investigate
+- State the exact symptom. Reproduce with the smallest reliable path.
+- Read the real error message **fully** — use `Shell` to capture stack traces, logs, failing inputs.
+- Run `ReadLints` on suspect files. Check recent changes (`git log`, `git diff`) before proposing causes.
+
+### Phase 2: Pattern Analysis
+- Inspect each boundary in multi-layer systems rather than guessing.
+- Classify: deterministic bug, race condition, environment-specific, data-dependent?
+- Check if similar bugs have been seen before.
+
+### Phase 3: Hypothesis & Testing
+- Trace from symptom → caller → upstream source.
+- Form a hypothesis. **State it explicitly.**
+- Test with the smallest possible experiment via `Shell`.
+- If wrong, update hypothesis — don't force-fit.
+
+### Phase 4: Minimal Fix & Regression Test
+- Explain why the fix addresses root cause. Prefer smallest change.
+- **Write a regression test** → feeds back into TDD cycle.
+- Re-run failing case + check adjacent flows.
+- State what was verified and what remains unverified.
+
+## Rationalization Prevention
+
+| Excuse | Reality |
+|--------|---------|
+| "Already tried everything" | List what you tried. You haven't. |
+| "Just restart/rebuild" | Works after restart ≠ understood. |
+| "Probably a race condition" | "Probably" = no evidence. Prove it. |
+| "Too complex to trace" | Narrow scope. Binary search the problem space. |
+| "Let's just add a retry" | Retries hide bugs. Root cause first. |
+| "It's a flaky test" | Flaky tests have deterministic causes. Find them. |
+
+## When No Root Cause Found
+
+1. Add instrumentation (logging, assertions at suspected boundary)
+2. Binary search: disable half the system, which half fails?
+3. What single piece of evidence would confirm or eliminate top hypothesis?
+4. Say "I don't know yet" if that's true — do NOT convert uncertainty into confidence
+
+## Output Structure
+
+```markdown
+## Symptom
+## Evidence
+## Hypothesis
+## Fix
+## Regression Test
+## Verification
+- [tested] / [not tested]
+```

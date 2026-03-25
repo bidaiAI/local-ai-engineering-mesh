@@ -61,18 +61,23 @@ cp templates/codex/instructions.example.md /path/to/your/codex/instructions.md
 ### Claude
 ```bash
 cp templates/claude/CLAUDE.example.md /path/to/your/project/CLAUDE.md
+cp -R templates/claude/rules-pack /path/to/your/claude/
+cp -R templates/claude/commands /path/to/your/claude/
 ```
 
 ### Cursor
 ```bash
 cp templates/cursor/engineering-mesh.mdc /path/to/your/project/.cursor/rules/00-engineering-mesh.mdc
 cp templates/cursor/evidence-release-gate.mdc /path/to/your/project/.cursor/rules/10-evidence-release-gate.mdc
+cp -R templates/cursor/rules-pack /path/to/your/project/.cursor/
 ```
 
 ### Antigravity
 ```bash
 cp templates/antigravity/local-ai-mesh-workflow.md /path/to/your/antigravity/workflows/
 cp templates/antigravity/knowledge-stub.md /path/to/your/antigravity/knowledge/
+cp -R templates/antigravity/workflows /path/to/your/antigravity/
+cp -R templates/antigravity/knowledge /path/to/your/antigravity/
 ```
 
 

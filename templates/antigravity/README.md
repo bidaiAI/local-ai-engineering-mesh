@@ -1,12 +1,13 @@
 # Antigravity Templates
 
-These files are starter pieces for the Antigravity side of the local AI engineering mesh.
+These files are public-safe starter assets for the Antigravity side of the local AI engineering mesh.
 
 Use them when you want:
-- a lightweight workflow entrypoint
-- a knowledge stub for persistent operating law
+- a workflow entrypoint for browser-heavy or artifact-heavy tasks
+- a knowledge layer that preserves operating law and handoff context
 - Antigravity to behave as a broad-capability endpoint inside the same shared system
 
 Suggested placement:
-- workflows: `_agents/workflows/`
-- knowledge / brain notes: your Antigravity knowledge location
+- workflows: your Antigravity workflows location
+- knowledge: your Antigravity knowledge location
+- adopt one workflow first, then add knowledge files for persistent behavior

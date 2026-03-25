@@ -1,10 +1,10 @@
 # Claude Commands Example
 
-Suggested commands to define in your Claude workflow:
-- /plan
-- /review
-- /verify
-- /publish
+Suggested command set for a governed Claude workflow:
+- `/plan` — clarify scope, options, risks, and success criteria before broad implementation
+- `/review` — run a risk-first review before declaring the change safe
+- `/verify` — demand fresh evidence before saying done
+- `/publish` — separate verification from branch / PR / release actions
 
-The point is not the exact command names.
-The point is keeping the same operating law across tools.
+The exact names do not matter.
+The important part is keeping the same operating law across tools.

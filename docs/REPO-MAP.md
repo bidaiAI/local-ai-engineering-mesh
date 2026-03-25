@@ -74,13 +74,21 @@ Project memory templates.
 Codex config and instruction starter templates.
 
 ### `templates/claude/`
-Claude project-law and command starter templates.
+Claude project-law, commands pack, and modular rules pack.
+- `CLAUDE.example.md`
+- `commands/plan.md`, `review.md`, `verify.md`, `publish.md`
+- `rules-pack/` for coding, testing, git, security, performance, delegation
 
 ### `templates/cursor/`
-Cursor rule templates with public-safe path naming.
+Cursor starter rules plus a richer public-safe rules pack.
+- starter gates: `engineering-mesh.mdc`, `evidence-release-gate.mdc`
+- `rules-pack/` for design, TDD, review, debugging, anti-patterns, context, git safety
 
 ### `templates/antigravity/`
-Antigravity workflow and knowledge templates.
+Antigravity workflow stubs plus browser/evidence and knowledge-handoff packs.
+- starter files: `local-ai-mesh-workflow.md`, `knowledge-stub.md`
+- `workflows/` for browser research and cross-tool handoff
+- `knowledge/` for operating law, session handoff, workflow index
 
 ### `policy.env.example`
 Shared policy defaults.

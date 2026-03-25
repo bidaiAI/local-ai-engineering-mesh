@@ -1,0 +1,11 @@
+---
+alwaysApply: true
+---
+
+# Engineering Mesh
+
+- Follow the shared operating law from `AGENTS.md`.
+- Prefer plan -> execute -> verify over ad hoc implementation.
+- Keep changes small when the repo is not fully understood.
+- Treat evidence as part of completion, not optional polish.
+- Escalate before risky publish, deploy, or external-write actions.

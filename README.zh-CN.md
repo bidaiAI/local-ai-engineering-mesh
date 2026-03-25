@@ -34,6 +34,95 @@
 
 重点不是“让一个工具包办所有事”，而是“让多个工具协同工作时，workflow 不会塌掉”。
 
+## 这个仓库解决什么痛点
+
+### 1. 常用工具额度不够、限流、或者暂时不方便用了
+最常见的问题是：
+- 一换工具，规则没了
+- 记忆断了
+- 质量门槛漂了
+- 整套 workflow 还要重新解释
+
+这个仓库的变化是：
+- 工具可以切
+- 标准不要重来
+- shared law 不变
+- project memory 不变
+- evidence 和 release discipline 不变
+
+**钩子句：** `Quota exhausted? Switch tools, not standards.`
+
+### 2. 多工具并用，但每个工具像孤岛
+很多人的现实分工是：
+- Claude 想方案
+- Cursor 在编辑器里写代码
+- Codex 跑命令、做执行治理
+- Antigravity 处理 browser / artifact / 跨域任务
+
+问题是这些工具往往彼此不连。
+
+这个仓库的变化是：
+- 把来回切换变成分工协同
+- 让不同工具共享同一套 operating law
+
+**钩子句：** `Not one perfect tool. One operating law across multiple tools.`
+
+### 3. 每次切工具都要重新讲一遍
+真实重置成本包括：
+- 项目规范
+- 代码风格
+- 验证方式
+- 什么算 done
+
+这个仓库的变化是：
+- shared law
+- project memory
+- runtime structure
+- reusable templates
+
+**钩子句：** `Stop re-explaining your workflow every time you switch tools.`
+
+### 4. 不同工具输出风格和质量门槛不一致
+常见情况是：
+- 一个偏快
+- 一个偏审美
+- 一个偏研究
+- 一个偏执行
+
+这个仓库的变化是：
+- 不要求每个工具一样强
+- 但要求它们服从同一个质量门槛
+
+**钩子句：** `Different tools, same quality bar.`
+
+### 5. AI 会做事，但不一定会安全地做事
+常见风险：
+- 一上来改一大片
+- 过早发布或部署
+- 没证据就说 done
+- review 纪律太弱
+
+这个仓库的变化是：
+- evidence gate
+- release discipline
+- project runtime commands
+- reusable review structure
+
+**钩子句：** `Not just output. Verified output.`
+
+### 6. 很多人想先提升自己，但不想第一天就上全量 mesh
+常见顾虑：
+- 太重
+- 现在只有一个工具
+- 一开始不想全套折腾
+
+这个仓库的变化是：
+- 先从单工具开始
+- 先把 operating layer 补起来
+- 以后再扩成 mesh
+
+**钩子句：** `Start with one tool. Grow into a mesh later.`
+
 ## 一眼看懂的总架构
 
 ```mermaid
@@ -279,9 +368,9 @@ browser / artifacts / knowledge / workflows"]
 
 仓库现在已经包含四个主要工具的公开安全模板层：
 - `templates/codex/`
-- `templates/claude/`
-- `templates/cursor/`
-- `templates/antigravity/`
+- `templates/claude/`（项目 law + commands pack + rules pack）
+- `templates/cursor/`（starter rules + rules pack）
+- `templates/antigravity/`（workflow stub + workflow/knowledge pack）
 
 这意味着你可以先从一个工具开始，之后再逐步接第二个、第三个，而不需要改掉整体 operating model。
 
@@ -385,7 +474,14 @@ local-ai-engineering-mesh/
 │   └── FRAMEWORK-DIAGRAM.md
 └── templates/
     ├── antigravity/
+    │   ├── workflows/
+    │   └── knowledge/
+    ├── claude/
+    │   ├── commands/
+    │   └── rules-pack/
+    ├── codex/
     ├── cursor/
+    │   └── rules-pack/
     ├── global-memory/
     ├── project-memory/
     └── policy.env.example

@@ -1,12 +1,13 @@
 # Cursor Templates
 
-These files are starter pieces for the Cursor side of the local AI engineering mesh.
+These files are public-safe starter assets for the Cursor side of the local AI engineering mesh.
 
 Use them when you want:
-- global or project-local Cursor rules
-- IDE-facing delivery discipline
-- Cursor to follow the same operating law as Codex and Antigravity
+- project-local Cursor rules
+- stronger delivery discipline inside the editor
+- more explicit design, review, and verification gates
+- Cursor to follow the same operating law as Codex, Claude, and Antigravity
 
 Suggested placement:
-- global: `<cursor-global-rules>`
-- project: `<project>/<project>/.cursor/rules/`
+- project rules: `<project>/.cursor/rules/`
+- rule pack: copy selected `.mdc` files from `rules-pack/` into your project

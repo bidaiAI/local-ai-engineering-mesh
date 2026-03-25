@@ -1,0 +1,60 @@
+---
+description: Use when reviewing code, comparing implementations, inspecting a patch, or judging whether a change is safe. Spec compliance first, then risk-ordered findings.
+globs:
+alwaysApply: false
+---
+
+# Risk-First Code Review
+
+Pipeline position: ① design → ② plan → ③ TDD → **④ THIS** → ⑤ ship | Priority 40 | Prerequisite: implementation complete
+
+Find what can break. But first, check if it matches the spec.
+
+## Review Order
+
+### 0. Spec Compliance (must pass first)
+- All planned features implemented? Nothing missing?
+- Anything NOT in the spec added? Nothing extra?
+- All acceptance criteria have corresponding tests?
+
+**Spec fails → fix first. Do NOT proceed to risk review.**
+
+### 1. Hunt for Risk
+Look for: broken business logic, invalid state / partial updates, race conditions, stale cache / sync mismatch, source-of-truth drift, bad fallback logic, missing auth/permission checks, incorrect error handling, silent failure paths.
+
+### 2. Check Verification Coverage
+- Critical path tested? Failure paths tested? Edge cases covered?
+- Change relies on unverified assumptions?
+
+### 3. Secondary Feedback (only if no serious issues)
+Maintainability, readability, cleanup ideas.
+
+## Re-Review Loop
+
+Issues found → Fix → **Review entire change again** (not just fixes) → Repeat until approved.
+
+## Severity
+
+- **Critical** (blocks progress): data loss, security, financial risk, production breakage
+- **High** (fix before proceeding): likely bug, serious regression
+- **Medium/Low** (can note for later): correctness gap, maintainability
+
+## Output Format
+
+```markdown
+## Spec Compliance
+- Status: PASS / FAIL
+- Missing: ... | Extra: ...
+
+## Findings
+1. [Severity] [Issue] — Why it matters / Evidence / Fix direction
+
+## Open Questions
+## Change Summary
+```
+
+## Rules
+
+- Spec compliance first. Then findings. Do not lead with praise. Do not bury risk.
+- If no findings, say so explicitly and mention residual testing gaps.
+- Critical findings block progress. Non-negotiable.

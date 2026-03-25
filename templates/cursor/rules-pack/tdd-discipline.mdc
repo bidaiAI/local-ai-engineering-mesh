@@ -1,0 +1,67 @@
+---
+description: Use during any code implementation — new features, bug fixes, refactoring. Enforces strict RED-GREEN-REFACTOR cycle.
+globs: "**/*.py,**/*.ts,**/*.tsx,**/*.js,**/*.jsx,**/*.go,**/*.rs,**/*.java,**/*.rb"
+alwaysApply: false
+---
+
+# TDD Discipline
+
+Pipeline position: ① design → ② plan → **③ THIS** → ④ review → ⑤ ship | Priority 30
+
+Write the test first. Watch it fail. Write minimal code to pass. No exceptions.
+
+## The Iron Law
+
+**NO PRODUCTION CODE WITHOUT A FAILING TEST FIRST.**
+
+Write code before the test? Delete it. Start over. Don't keep it as "reference." Delete means delete.
+
+**Exceptions** (ask user first): throwaway prototypes ("prototype" / "探索"), generated boilerplate, config files.
+
+## RED-GREEN-REFACTOR
+
+### RED — Write one minimal failing test
+- One behavior per test. If name contains "and", split it.
+- Real code, not mocks (unless unavoidable).
+
+### Verify RED — Run it, watch it fail
+**MANDATORY.** Use `Shell` to run the test. Confirm: fails because feature is missing (not typo errors). Test passes immediately? You're testing existing behavior — fix the test.
+
+### GREEN — Simplest code to pass
+- Nothing beyond what the test requires. No refactoring yet. YAGNI.
+
+### Verify GREEN — Run it, watch it pass
+**MANDATORY.** Confirm: test passes, all other tests still pass, no warnings. Test fails? Fix the code, not the test.
+
+### REFACTOR — Only after green
+Remove duplication, improve names, extract helpers. Keep tests green. Don't add behavior.
+
+## Rationalization Prevention
+
+| Excuse | Reality |
+|--------|---------|
+| "Too simple to test" | Simple code breaks. Test takes 30 seconds. |
+| "I'll test after" | Tests-after = "what does this do?" Tests-first = "what should this do?" |
+| "Keep as reference" | You'll adapt it. That's testing after. Delete means delete. |
+| "Need to explore first" | Fine. Throw away exploration, then TDD. |
+| "Test hard = design unclear" | Hard to test = hard to use. Simplify. |
+| "TDD will slow me down" | TDD is faster than debugging. |
+| "Just this once" | No exceptions. That's rationalization. |
+
+## Red Flags — Delete Code, Start Over
+
+- Wrote code before test
+- Test passes immediately with no changes
+- About to say "just this once"
+- Wanting to "keep as reference"
+
+## Verification Checklist
+
+- [ ] Every new function/method has a test
+- [ ] Watched each test fail before implementing
+- [ ] Wrote minimal code to pass each test
+- [ ] All tests pass (run via `Shell`)
+- [ ] Output clean — also check `ReadLints` for introduced errors
+- [ ] Edge cases and error paths covered
+
+Can't check all boxes? You skipped TDD. Start over.

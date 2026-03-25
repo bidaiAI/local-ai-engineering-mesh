@@ -36,6 +36,95 @@ This repository proposes a different model:
 The point is not to make one tool do everything.
 The point is to make multiple tools work together without collapsing the workflow every time you switch.
 
+## Problems this repository solves
+
+### 1. Your preferred tool runs out of quota, gets rate-limited, or becomes inconvenient
+What usually breaks:
+- you switch tools and lose the rules
+- memory resets
+- quality expectations drift
+- you have to explain the workflow again
+
+What this repository changes:
+- tools can switch
+- standards do not restart
+- shared law stays the same
+- project memory stays the same
+- evidence and release discipline stay the same
+
+**Hook:** `Quota exhausted? Switch tools, not standards.`
+
+### 2. Multi-tool setups often act like isolated islands
+A common pattern is:
+- Claude for planning
+- Cursor for coding in the editor
+- Codex for command-heavy execution
+- Antigravity for browser, artifact, or cross-domain work
+
+The problem is that these tools often do not connect.
+
+What this repository changes:
+- it turns tool switching into role-based coordination
+- it makes different tools share one operating law
+
+**Hook:** `Not one perfect tool. One operating law across multiple tools.`
+
+### 3. Switching tools usually means re-explaining everything
+Typical reset cost:
+- project rules
+- code style
+- verification expectations
+- what counts as done
+
+What this repository changes:
+- shared law
+- project memory
+- runtime structure
+- reusable templates
+
+**Hook:** `Stop re-explaining your workflow every time you switch tools.`
+
+### 4. Different tools usually produce different quality bars
+Typical failure pattern:
+- one tool optimizes for speed
+- one for polish
+- one for research
+- one for execution
+
+What this repository changes:
+- it does not require identical strengths
+- it does require one consistent quality bar
+
+**Hook:** `Different tools, same quality bar.`
+
+### 5. AI can produce output without producing safe output
+Typical risk:
+- broad edits without guardrails
+- premature publish or deploy
+- done claims without evidence
+- weak review discipline
+
+What this repository changes:
+- evidence gates
+- release discipline
+- project runtime commands
+- reusable review structures
+
+**Hook:** `Not just output. Verified output.`
+
+### 6. Many people want improvement without adopting a full mesh on day one
+Typical concern:
+- too heavy
+- only one tool is available now
+- full multi-tool setup feels premature
+
+What this repository changes:
+- start with one tool
+- improve the operating layer first
+- grow into a mesh later if needed
+
+**Hook:** `Start with one tool. Grow into a mesh later.`
+
 ## At-a-glance architecture
 
 ```mermaid
@@ -282,9 +371,9 @@ These are meant to share distinctive system behavior, not private machine state.
 
 The repository now includes public-safe starter templates for all four primary tools:
 - `templates/codex/`
-- `templates/claude/`
-- `templates/cursor/`
-- `templates/antigravity/`
+- `templates/claude/` (project law + commands pack + rules pack)
+- `templates/cursor/` (starter rules + rules pack)
+- `templates/antigravity/` (workflow stubs + workflow/knowledge pack)
 
 This means you can start with one tool, add a second later, or grow into a full mesh without changing the overall operating model.
 
@@ -388,7 +477,14 @@ local-ai-engineering-mesh/
 │   └── FRAMEWORK-DIAGRAM.md
 └── templates/
     ├── antigravity/
+    │   ├── workflows/
+    │   └── knowledge/
+    ├── claude/
+    │   ├── commands/
+    │   └── rules-pack/
+    ├── codex/
     ├── cursor/
+    │   └── rules-pack/
     ├── global-memory/
     ├── project-memory/
     └── policy.env.example
