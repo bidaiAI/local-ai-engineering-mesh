@@ -136,3 +136,8 @@ local-ai-engineering-mesh/
 - bottom layer: project runtime, evidence, and release discipline
 
 That is what turns separate AI tools into a governed engineering mesh.
+
+
+## Companion labels
+
+For poster-style or social-image text, see [IMAGE-LABELS.md](IMAGE-LABELS.md).

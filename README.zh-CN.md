@@ -128,31 +128,72 @@
 ```mermaid
 flowchart TD
     A["Shared Law
-AGENTS.md"] --> B["Codex
-执行核心
-92/100"]
-    A --> C["Claude
-工作流标杆
-90/100"]
-    A --> D["Cursor
-IDE 交付层
-89/100"]
-    A --> E["Antigravity
-能力平台
-91/100"]
+AGENTS.md"]
 
-    B --> F["项目运行层
-commands / memory / state / evidence"]
-    C --> G["方法论层
-review / command culture / collaboration"]
-    D --> H["编辑器表层
-project rules / 低摩擦实现"]
-    E --> I["能力扩展层
-browser / artifacts / knowledge / workflows"]
+    subgraph COD["Codex"]
+      B1["config.example.toml
+instructions.example.md"]
+      B2["state-store-memory
+safe-pr-flow
+governed-deploy"]
+      B3["visual-evidence
+project-bootstrap"]
+      B4["runtime commands
+state + evidence"]
+    end
 
-    F --> J["发布纪律"]
-    F --> K["证据门"]
-    F --> L["可复用模式"]
+    subgraph CLA["Claude"]
+      C1["CLAUDE.example.md"]
+      C2["/plan /review /verify /publish"]
+      C3["rules-pack
+security / testing / git"]
+      C4["planning + review
+workflow benchmark"]
+    end
+
+    subgraph CUR["Cursor"]
+      D1["engineering-mesh.mdc
+evidence-release-gate.mdc"]
+      D2["design-first-gate
+tdd-discipline"]
+      D3["review / debug / anti-patterns
+context / git-safety"]
+      D4["project-local delivery"]
+    end
+
+    subgraph ANT["Antigravity"]
+      E1["local-ai-mesh-workflow
+knowledge-stub"]
+      E2["browser-research-evidence
+cross-tool-handoff"]
+      E3["OPERATING-LAW
+SESSION-HANDOFF
+WORKFLOW-INDEX"]
+      E4["browser + artifacts
+knowledge + handoff"]
+    end
+
+    A --> B1
+    A --> C1
+    A --> D1
+    A --> E1
+
+    B1 --> B2 --> B3 --> B4
+    C1 --> C2 --> C3 --> C4
+    D1 --> D2 --> D3 --> D4
+    E1 --> E2 --> E3 --> E4
+
+    B4 --> F["Project Runtime
+<project>/.codex/commands
+<project>/.codex/memory
+<project>/.codex/state"]
+    C4 --> G["Planning + Review"]
+    D4 --> H["Editor Delivery"]
+    E4 --> I["Research + Artifacts"]
+
+    F --> J["Evidence Gate"]
+    F --> K["Release Discipline"]
+    F --> L["Reusable Patterns"]
 ```
 这张总图故意保持简洁。每个工具下面更具体的公开包，已经在下方 **每个工具已经公开了哪些具体包** 中列出，并在 [TOOL-LAYERS.md](docs/TOOL-LAYERS.md) 和 [FRAMEWORK-DIAGRAM.md](docs/FRAMEWORK-DIAGRAM.md) 里继续展开。
 

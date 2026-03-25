@@ -130,30 +130,71 @@ What this repository changes:
 ```mermaid
 flowchart TD
     A["Shared Law
-AGENTS.md"] --> B["Codex
-Execution Core
-92/100"]
-    A --> C["Claude
-Workflow Benchmark
-90/100"]
-    A --> D["Cursor
-IDE Delivery Layer
-89/100"]
-    A --> E["Antigravity
-Capability Platform
-91/100"]
+AGENTS.md"]
 
-    B --> F["Project Runtime
-commands / memory / state / evidence"]
-    C --> G["Methodology
-review / command culture / collaboration"]
-    D --> H["Editor Surface
-project rules / low-friction implementation"]
-    E --> I["Expansion Surface
-browser / artifacts / knowledge / workflows"]
+    subgraph COD["Codex"]
+      B1["config.example.toml
+instructions.example.md"]
+      B2["state-store-memory
+safe-pr-flow
+governed-deploy"]
+      B3["visual-evidence
+project-bootstrap"]
+      B4["runtime commands
+state + evidence"]
+    end
 
-    F --> J["Release Discipline"]
-    F --> K["Evidence Gate"]
+    subgraph CLA["Claude"]
+      C1["CLAUDE.example.md"]
+      C2["/plan /review /verify /publish"]
+      C3["rules-pack
+security / testing / git"]
+      C4["planning + review
+workflow benchmark"]
+    end
+
+    subgraph CUR["Cursor"]
+      D1["engineering-mesh.mdc
+evidence-release-gate.mdc"]
+      D2["design-first-gate
+tdd-discipline"]
+      D3["review / debug / anti-patterns
+context / git-safety"]
+      D4["project-local delivery"]
+    end
+
+    subgraph ANT["Antigravity"]
+      E1["local-ai-mesh-workflow
+knowledge-stub"]
+      E2["browser-research-evidence
+cross-tool-handoff"]
+      E3["OPERATING-LAW
+SESSION-HANDOFF
+WORKFLOW-INDEX"]
+      E4["browser + artifacts
+knowledge + handoff"]
+    end
+
+    A --> B1
+    A --> C1
+    A --> D1
+    A --> E1
+
+    B1 --> B2 --> B3 --> B4
+    C1 --> C2 --> C3 --> C4
+    D1 --> D2 --> D3 --> D4
+    E1 --> E2 --> E3 --> E4
+
+    B4 --> F["Project Runtime
+<project>/.codex/commands
+<project>/.codex/memory
+<project>/.codex/state"]
+    C4 --> G["Planning + Review"]
+    D4 --> H["Editor Delivery"]
+    E4 --> I["Research + Artifacts"]
+
+    F --> J["Evidence Gate"]
+    F --> K["Release Discipline"]
     F --> L["Reusable Patterns"]
 ```
 This top-level diagram stays simple on purpose. The concrete packs under each tool are listed in **Concrete packs by tool** below and expanded further in [TOOL-LAYERS.md](docs/TOOL-LAYERS.md) and [FRAMEWORK-DIAGRAM.md](docs/FRAMEWORK-DIAGRAM.md).
