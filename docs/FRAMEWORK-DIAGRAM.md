@@ -79,6 +79,10 @@ local-ai-engineering-mesh/
 │   └── FRAMEWORK-DIAGRAM.md
 └── templates/
     ├── AGENTS.example.md
+    ├── antigravity/
+    ├── claude/
+    ├── codex/
+    ├── cursor/
     ├── global-memory/
     ├── project-memory/
     └── policy.env.example

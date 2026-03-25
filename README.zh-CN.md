@@ -246,6 +246,16 @@ browser / artifacts / knowledge / workflows"]
 - 状态层
 - 证据层
 
+## 工具模板
+
+仓库现在已经包含四个主要工具的公开安全模板层：
+- `templates/codex/`
+- `templates/claude/`
+- `templates/cursor/`
+- `templates/antigravity/`
+
+这意味着你可以先从一个工具开始，之后再逐步接第二个、第三个，而不需要改掉整体 operating model。
+
 ## 快速开始
 
 你**不需要一开始就有四个工具**。

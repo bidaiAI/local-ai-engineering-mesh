@@ -249,6 +249,16 @@ That means this is not only conceptual. It already operates at:
 - state layer
 - evidence layer
 
+## Tool templates
+
+The repository now includes public-safe starter templates for all four primary tools:
+- `templates/codex/`
+- `templates/claude/`
+- `templates/cursor/`
+- `templates/antigravity/`
+
+This means you can start with one tool, add a second later, or grow into a full mesh without changing the overall operating model.
+
 ## Quick start
 
 You do **not** need all four tools to use this repository.

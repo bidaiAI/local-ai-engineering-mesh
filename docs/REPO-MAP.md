@@ -64,6 +64,12 @@ Global memory seeds.
 ### `templates/project-memory/`
 Project memory templates.
 
+### `templates/codex/`
+Codex config and instruction starter templates.
+
+### `templates/claude/`
+Claude project-law and command starter templates.
+
 ### `templates/cursor/`
 Cursor rule templates with public-safe path naming.
 

@@ -48,3 +48,29 @@ Target model:
 4. editor rules
 5. tool-specific configs
 6. evidence and release discipline
+
+
+## Tool-specific add-ons
+
+### Codex
+```bash
+cp templates/codex/config.example.toml /path/to/your/codex/config.toml
+cp templates/codex/instructions.example.md /path/to/your/codex/instructions.md
+```
+
+### Claude
+```bash
+cp templates/claude/CLAUDE.example.md /path/to/your/project/CLAUDE.md
+```
+
+### Cursor
+```bash
+cp templates/cursor/engineering-mesh.mdc /path/to/your/project/.cursor/rules/00-engineering-mesh.mdc
+cp templates/cursor/evidence-release-gate.mdc /path/to/your/project/.cursor/rules/10-evidence-release-gate.mdc
+```
+
+### Antigravity
+```bash
+cp templates/antigravity/local-ai-mesh-workflow.md /path/to/your/antigravity/workflows/
+cp templates/antigravity/knowledge-stub.md /path/to/your/antigravity/knowledge/
+```
