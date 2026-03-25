@@ -18,6 +18,50 @@
 
 重点不是“谁替代谁”，而是“切换工具时 workflow 不要重置”。
 
+## 一眼看懂的总架构
+
+```mermaid
+flowchart TD
+    A["Shared Law
+AGENTS.md"] --> B["Codex
+执行核心
+92/100"]
+    A --> C["Claude
+工作流标杆
+90/100"]
+    A --> D["Cursor
+IDE 交付层
+89/100"]
+    A --> E["Antigravity
+能力平台
+91/100"]
+
+    B --> F["项目运行层
+commands / memory / state / evidence"]
+    C --> G["方法论层
+review / command culture / collaboration"]
+    D --> H["编辑器表层
+project rules / 低摩擦实现"]
+    E --> I["能力扩展层
+browser / artifacts / knowledge / workflows"]
+
+    F --> J["发布纪律"]
+    F --> K["证据门"]
+    F --> L["可复用模式"]
+```
+
+## 我实际怎么用这套系统
+
+这份仓库不是泛泛的框架宣传，而是尽量按“高手公开自己正在用的系统”来写。
+
+实际使用时，大致分工是：
+- Codex 负责执行、治理和项目交付
+- Claude 作为工作流标杆和方法论参考
+- Cursor 贴近日常编码现场
+- Antigravity 在任务超出纯 coding 时负责能力扩展
+
+所以这个仓库不是一些零散技巧，而是一套我会真正长期使用的系统表达。
+
 ## 总体框架层
 
 ### 1. 共享法则层
@@ -251,3 +295,8 @@ local-ai-engineering-mesh/
 ```
 
 参见 [REPO-MAP.md](docs/REPO-MAP.md)。
+
+
+## 开源协议
+
+采用 [MIT License](LICENSE)。

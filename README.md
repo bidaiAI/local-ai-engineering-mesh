@@ -21,6 +21,50 @@ This repository is built around a different idea:
 The goal is not to make one tool worship-worthy.
 The goal is to make multiple tools work together without resetting your workflow every time you switch.
 
+## At-a-glance architecture
+
+```mermaid
+flowchart TD
+    A["Shared Law
+AGENTS.md"] --> B["Codex
+Execution Core
+92/100"]
+    A --> C["Claude
+Workflow Benchmark
+90/100"]
+    A --> D["Cursor
+IDE Delivery Layer
+89/100"]
+    A --> E["Antigravity
+Capability Platform
+91/100"]
+
+    B --> F["Project Runtime
+commands / memory / state / evidence"]
+    C --> G["Methodology
+review / command culture / collaboration"]
+    D --> H["Editor Surface
+project rules / low-friction implementation"]
+    E --> I["Expansion Surface
+browser / artifacts / knowledge / workflows"]
+
+    F --> J["Release Discipline"]
+    F --> K["Evidence Gate"]
+    F --> L["Reusable Patterns"]
+```
+
+## How I actually use this
+
+This repository is written to look like a real personal setup, not a generic framework brochure.
+
+In practice, the working model is:
+- Codex drives execution, governance, and project delivery
+- Claude remains the workflow benchmark and methodology reference
+- Cursor stays closest to daily coding inside the editor
+- Antigravity expands the system when the task goes broader than pure coding
+
+That is why this repository is structured like a system I actually use, not a list of disconnected tips.
+
 ## System framework
 
 This mesh is organized in layers.
@@ -283,3 +327,8 @@ Adoption paths:
 - [Compound Engineering plugin](https://github.com/EveryInc/compound-engineering-plugin)
 - [shinpr/agentic-code](https://github.com/shinpr/agentic-code)
 - [centminmod/my-claude-code-setup](https://github.com/centminmod/my-claude-code-setup)
+
+
+## License
+
+Released under the [MIT License](LICENSE).

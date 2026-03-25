@@ -54,3 +54,7 @@ Antigravity workflow and knowledge templates.
 
 ### `policy.env.example`
 Shared policy defaults.
+
+
+### `LICENSE`
+MIT open-source license for public reuse.
