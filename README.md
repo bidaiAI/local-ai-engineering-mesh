@@ -128,74 +128,119 @@ What this repository changes:
 ## At-a-glance architecture
 
 ```mermaid
-flowchart TD
+flowchart TB
     A["Shared Law
 AGENTS.md"]
+    A2["Shared Principles
+plan / memory / evidence / release / reuse"]
 
-    subgraph COD["Codex"]
-      B1["config.example.toml
+    A --> A2
+
+    subgraph COD["Codex — Execution + Governance"]
+      B1["Adapter
+config.example.toml
 instructions.example.md"]
-      B2["state-store-memory
+      B2["Native Skills
+state-store-memory
 safe-pr-flow
 governed-deploy"]
-      B3["visual-evidence
+      B3["Execution Helpers
+visual-evidence
 project-bootstrap"]
-      B4["runtime commands
-state + evidence"]
+      B4["Runtime Discipline
+commands
+state
+evidence"]
     end
 
-    subgraph CLA["Claude"]
-      C1["CLAUDE.example.md"]
-      C2["/plan /review /verify /publish"]
-      C3["rules-pack
-security / testing / git"]
-      C4["planning + review
+    subgraph CLA["Claude — Planning + Review"]
+      C1["Adapter
+CLAUDE.example.md"]
+      C2["Commands
+/plan
+/review
+/verify
+/publish"]
+      C3["Rules Pack
+agents
+security
+testing
+git
+performance"]
+      C4["Method Layer
+planning
+review
 workflow benchmark"]
     end
 
-    subgraph CUR["Cursor"]
-      D1["engineering-mesh.mdc
+    subgraph CUR["Cursor — IDE Delivery"]
+      D1["Starter Rules
+engineering-mesh.mdc
 evidence-release-gate.mdc"]
-      D2["design-first-gate
+      D2["Build Discipline
+design-first-gate
 tdd-discipline"]
-      D3["review / debug / anti-patterns
-context / git-safety"]
-      D4["project-local delivery"]
+      D3["Delivery Rules
+review
+debug
+anti-patterns
+context
+git-safety"]
+      D4["Editor Layer
+project-local delivery
+low-friction edits"]
     end
 
-    subgraph ANT["Antigravity"]
-      E1["local-ai-mesh-workflow
+    subgraph ANT["Antigravity — Capability Expansion"]
+      E1["Starter Files
+local-ai-mesh-workflow
 knowledge-stub"]
-      E2["browser-research-evidence
+      E2["Workflow Pack
+browser-research-evidence
 cross-tool-handoff"]
-      E3["OPERATING-LAW
+      E3["Knowledge Pack
+OPERATING-LAW
 SESSION-HANDOFF
 WORKFLOW-INDEX"]
-      E4["browser + artifacts
-knowledge + handoff"]
+      E4["Expansion Layer
+browser
+artifacts
+knowledge
+handoff"]
     end
 
-    A --> B1
-    A --> C1
-    A --> D1
-    A --> E1
+    A2 --> B1
+    A2 --> C1
+    A2 --> D1
+    A2 --> E1
 
     B1 --> B2 --> B3 --> B4
     C1 --> C2 --> C3 --> C4
     D1 --> D2 --> D3 --> D4
     E1 --> E2 --> E3 --> E4
 
+    C4 --> X1["Design + Review Output"]
+    D4 --> X2["Editor Implementation Output"]
+    E4 --> X3["Research + Artifact Output"]
+
     B4 --> F["Project Runtime
 <project>/.codex/commands
 <project>/.codex/memory
 <project>/.codex/state"]
-    C4 --> G["Planning + Review"]
-    D4 --> H["Editor Delivery"]
-    E4 --> I["Research + Artifacts"]
+    X1 --> F
+    X2 --> F
+    X3 --> F
 
-    F --> J["Evidence Gate"]
-    F --> K["Release Discipline"]
-    F --> L["Reusable Patterns"]
+    F --> J["Evidence Gate
+tests / logs / screenshots / runtime proof"]
+    F --> K["Release Discipline
+publish / PR / deploy safety"]
+    F --> L["Reusable Patterns
+promote wins into templates / rules / skills"]
+
+    J --> M["Verified Delivery"]
+    K --> M
+    L --> M
 ```
 This top-level diagram stays simple on purpose. The concrete packs under each tool are listed in **Concrete packs by tool** below and expanded further in [TOOL-LAYERS.md](docs/TOOL-LAYERS.md) and [FRAMEWORK-DIAGRAM.md](docs/FRAMEWORK-DIAGRAM.md).
 
