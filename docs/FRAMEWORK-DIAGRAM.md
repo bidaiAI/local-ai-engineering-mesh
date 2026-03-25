@@ -67,6 +67,7 @@ local-ai-engineering-mesh/
 ├── README.md
 ├── docs/
 │   ├── ARCHITECTURE.md
+│   ├── QUICKSTART.md
 │   ├── BOOTSTRAP-SPEC.md
 │   ├── MEMORY-SCHEMA.md
 │   ├── OPERATING-CHARTER.md
@@ -77,6 +78,7 @@ local-ai-engineering-mesh/
 │   ├── STACK.md
 │   └── FRAMEWORK-DIAGRAM.md
 └── templates/
+    ├── AGENTS.example.md
     ├── global-memory/
     ├── project-memory/
     └── policy.env.example

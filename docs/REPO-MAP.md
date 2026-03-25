@@ -47,7 +47,16 @@ What a repo should discover and establish before deeper implementation begins.
 ### `STACK.md`
 Tooling and stack overview in sanitized form.
 
+### `QUICKSTART.md`
+Beginner-friendly adoption guide for single-tool, dual-tool, and full-mesh setup.
+
+### `scripts/setup-project-runtime.sh`
+Project bootstrap helper for creating memory, state, and Cursor rule skeletons.
+
 ## `templates/`
+
+### `templates/AGENTS.example.md`
+Starter shared-law template for one or more tools.
 
 ### `templates/global-memory/`
 Global memory seeds.

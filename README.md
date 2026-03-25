@@ -249,6 +249,36 @@ That means this is not only conceptual. It already operates at:
 - state layer
 - evidence layer
 
+## Quick start
+
+You do **not** need all four tools to use this repository.
+You can start with a single tool and still improve your workflow.
+
+### Single-tool first
+```bash
+git clone https://github.com/bidaiAI/local-ai-engineering-mesh.git
+cd local-ai-engineering-mesh
+./scripts/setup-project-runtime.sh /path/to/your-project
+```
+
+This creates:
+- `<project>/.codex/memory/`
+- `<project>/.codex/state/`
+- `<project>/.cursor/rules/`
+
+Then:
+1. copy `templates/AGENTS.example.md` into your shared-law location
+2. adapt it for your tool
+3. fill in the project memory files
+
+### Dual-tool setup
+Use one execution tool and one editor/research tool under the same shared law.
+
+### Full mesh
+Connect Codex, Claude, Cursor, and Antigravity under one shared law when you are ready.
+
+See [QUICKSTART.md](docs/QUICKSTART.md).
+
 ## Core operating documents
 
 These are the documents that make the repository feel like a real working system rather than a collection of notes:
@@ -294,8 +324,11 @@ local-ai-engineering-mesh/
 ├── README.ja.md
 ├── README.fr.md
 ├── LICENSE
+├── scripts/
+│   └── setup-project-runtime.sh
 ├── docs/
 │   ├── ARCHITECTURE.md
+│   ├── QUICKSTART.md
 │   ├── BOOTSTRAP-SPEC.md
 │   ├── MEMORY-SCHEMA.md
 │   ├── OPERATING-CHARTER.md

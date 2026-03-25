@@ -246,6 +246,36 @@ browser / artifacts / knowledge / workflows"]
 - 状态层
 - 证据层
 
+## 快速开始
+
+你**不需要一开始就有四个工具**。
+先从单工具开始，也能明显提升 workflow。
+
+### 单工具先上
+```bash
+git clone https://github.com/bidaiAI/local-ai-engineering-mesh.git
+cd local-ai-engineering-mesh
+./scripts/setup-project-runtime.sh /path/to/your-project
+```
+
+这会创建：
+- `<project>/.codex/memory/`
+- `<project>/.codex/state/`
+- `<project>/.cursor/rules/`
+
+然后：
+1. 把 `templates/AGENTS.example.md` 复制到你的 shared-law 位置
+2. 按你的工具调整
+3. 把项目记忆文件补完整
+
+### 双工具协作
+让一个执行工具和一个编辑器/研究工具共用同一套法则。
+
+### 全量 Mesh
+等你准备好了，再把 Codex、Claude、Cursor、Antigravity 接到同一套 shared law 下。
+
+参见 [QUICKSTART.md](docs/QUICKSTART.md)。
+
 ## 核心制度文档
 
 下面这些文档让这个仓库更像一套真实可运行的系统，而不是零散笔记：
@@ -291,8 +321,11 @@ local-ai-engineering-mesh/
 ├── README.ja.md
 ├── README.fr.md
 ├── LICENSE
+├── scripts/
+│   └── setup-project-runtime.sh
 ├── docs/
 │   ├── ARCHITECTURE.md
+│   ├── QUICKSTART.md
 │   ├── BOOTSTRAP-SPEC.md
 │   ├── MEMORY-SCHEMA.md
 │   ├── OPERATING-CHARTER.md
