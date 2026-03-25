@@ -1,0 +1,99 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="980" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#121A33"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="180" y1="140" x2="1420" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6D7CFF"/>
+      <stop offset="0.45" stop-color="#7B5CFF"/>
+      <stop offset="1" stop-color="#15C7A8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="980" fill="url(#bg)"/>
+  <rect x="48" y="48" width="1504" height="884" rx="28" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.08)"/>
+
+  <text x="84" y="110" fill="#EAF0FF" font-size="42" font-weight="700" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">工具可以切，标准不要重来。</text>
+  <text x="84" y="148" fill="#9FB0D9" font-size="22" font-weight="400" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">Local AI Engineering Mesh · 用一套 operating law 组织 Codex / Claude / Cursor / Antigravity</text>
+
+  <rect x="84" y="184" width="1432" height="88" rx="22" fill="#111A35" stroke="rgba(255,255,255,0.08)" filter="url(#shadow)"/>
+  <text x="116" y="220" fill="#B6C4FF" font-size="18" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">Shared Law</text>
+  <text x="116" y="248" fill="#F5F7FF" font-size="26" font-weight="700" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">AGENTS.md</text>
+  <text x="370" y="236" fill="#C9D4F7" font-size="20" font-weight="500" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">plan / memory / evidence / release / reuse</text>
+
+  <g filter="url(#shadow)">
+    <rect x="84" y="314" width="330" height="294" rx="24" fill="#101935" stroke="rgba(109,124,255,0.45)"/>
+    <rect x="430" y="314" width="330" height="294" rx="24" fill="#101935" stroke="rgba(123,92,255,0.45)"/>
+    <rect x="776" y="314" width="330" height="294" rx="24" fill="#101935" stroke="rgba(46,176,255,0.42)"/>
+    <rect x="1122" y="314" width="394" height="294" rx="24" fill="#101935" stroke="rgba(21,199,168,0.45)"/>
+  </g>
+
+  <text x="108" y="354" fill="#C7D2FF" font-size="18" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">Codex</text>
+  <text x="108" y="387" fill="#F5F7FF" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">执行核心</text>
+  <text x="108" y="420" fill="#92A3D1" font-size="17" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">config / instructions / runtime discipline</text>
+  <text x="108" y="465" fill="#DDE5FF" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• state-store-memory</text>
+  <text x="108" y="495" fill="#DDE5FF" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• safe-pr-flow</text>
+  <text x="108" y="525" fill="#DDE5FF" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• governed-deploy</text>
+  <text x="108" y="555" fill="#DDE5FF" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• visual-evidence</text>
+  <text x="108" y="585" fill="#DDE5FF" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• project-bootstrap</text>
+
+  <text x="454" y="354" fill="#D5C8FF" font-size="18" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">Claude</text>
+  <text x="454" y="387" fill="#F5F7FF" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">工作流标杆</text>
+  <text x="454" y="420" fill="#B8AEEB" font-size="17" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">planning / review / methodology</text>
+  <text x="454" y="465" fill="#F0E8FF" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• /plan</text>
+  <text x="454" y="495" fill="#F0E8FF" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• /review</text>
+  <text x="454" y="525" fill="#F0E8FF" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• /verify</text>
+  <text x="454" y="555" fill="#F0E8FF" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• /publish</text>
+  <text x="454" y="585" fill="#F0E8FF" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• rules-pack</text>
+
+  <text x="800" y="354" fill="#A9D8FF" font-size="18" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">Cursor</text>
+  <text x="800" y="387" fill="#F5F7FF" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">IDE 交付层</text>
+  <text x="800" y="420" fill="#9CC6E8" font-size="17" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">editor-native implementation</text>
+  <text x="800" y="465" fill="#DFF2FF" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• engineering-mesh</text>
+  <text x="800" y="495" fill="#DFF2FF" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• evidence-release-gate</text>
+  <text x="800" y="525" fill="#DFF2FF" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• design-first-gate</text>
+  <text x="800" y="555" fill="#DFF2FF" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• TDD / review / debug rules</text>
+  <text x="800" y="585" fill="#DFF2FF" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• anti-patterns / context / git</text>
+
+  <text x="1146" y="354" fill="#93F0DB" font-size="18" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">Antigravity</text>
+  <text x="1146" y="387" fill="#F5F7FF" font-size="30" font-weight="700" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">能力扩展层</text>
+  <text x="1146" y="420" fill="#99D7CA" font-size="17" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">browser / artifact / cross-domain</text>
+  <text x="1146" y="465" fill="#E3FFF8" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• local-ai-mesh-workflow</text>
+  <text x="1146" y="495" fill="#E3FFF8" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• knowledge-stub</text>
+  <text x="1146" y="525" fill="#E3FFF8" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• browser-research-evidence</text>
+  <text x="1146" y="555" fill="#E3FFF8" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• cross-tool-handoff</text>
+  <text x="1146" y="585" fill="#E3FFF8" font-size="19" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">• knowledge pack</text>
+
+  <path d="M249 620 C249 665, 382 680, 800 680" stroke="url(#accent)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M595 620 C595 665, 655 680, 800 680" stroke="url(#accent)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M941 620 C941 665, 928 680, 800 680" stroke="url(#accent)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1319 620 C1319 665, 1135 680, 800 680" stroke="url(#accent)" stroke-width="4" stroke-linecap="round"/>
+
+  <g filter="url(#shadow)">
+    <rect x="428" y="692" width="744" height="114" rx="26" fill="#101935" stroke="rgba(255,255,255,0.1)"/>
+  </g>
+  <text x="460" y="735" fill="#BED0FF" font-size="20" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">Project Runtime</text>
+  <text x="460" y="775" fill="#F5F7FF" font-size="28" font-weight="700" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">commands / memory / state</text>
+  <text x="960" y="775" fill="#A9B8DE" font-size="20" font-weight="500" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">同一套运行时，承接四个端点的输出</text>
+
+  <g filter="url(#shadow)">
+    <rect x="84" y="842" width="454" height="86" rx="22" fill="#101935" stroke="rgba(255,255,255,0.08)"/>
+    <rect x="573" y="842" width="454" height="86" rx="22" fill="#101935" stroke="rgba(255,255,255,0.08)"/>
+    <rect x="1062" y="842" width="454" height="86" rx="22" fill="#101935" stroke="rgba(255,255,255,0.08)"/>
+  </g>
+  <text x="112" y="878" fill="#F5F7FF" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">Evidence Gate</text>
+  <text x="112" y="906" fill="#A8B7DD" font-size="17" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">tests / logs / screenshots / runtime proof</text>
+
+  <text x="601" y="878" fill="#F5F7FF" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">Release Discipline</text>
+  <text x="601" y="906" fill="#A8B7DD" font-size="17" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">publish / PR / deploy safety</text>
+
+  <text x="1090" y="878" fill="#F5F7FF" font-size="24" font-weight="700" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">Reusable Patterns</text>
+  <text x="1090" y="906" fill="#A8B7DD" font-size="17" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">promote wins into templates / rules / skills</text>
+
+  <text x="84" y="956" fill="#C6D4FF" font-size="18" font-weight="600" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">额度会断，workflow 不该断。</text>
+  <text x="1135" y="956" fill="#8FA2D3" font-size="16" font-family="Inter, PingFang SC, Helvetica, Arial, sans-serif">github.com/bidaiAI/local-ai-engineering-mesh</text>
+</svg>
