@@ -45,7 +45,7 @@ How memory is layered and promoted across global, project, module, and session s
 What a repo should discover and establish before deeper implementation begins.
 
 ### `STACK.md`
-Tooling and stack overview in sanitized form.
+Tooling and stack overview in public-safe form.
 
 ### `QUICKSTART.md`
 Beginner-friendly adoption guide for single-tool, dual-tool, and full-mesh setup.

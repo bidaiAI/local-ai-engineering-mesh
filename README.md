@@ -360,7 +360,7 @@ Examples:
 
 ## Four-tool role model and reference assessment
 
-These scores are not universal benchmarks. They are a reference assessment of one real local setup as of **March 25, 2026**.
+These scores are not universal benchmarks. They are a practical reference assessment for this operating model as of **March 25, 2026**.
 
 ### Codex — 92/100
 **Role in the mesh:** execution core and governance core.
@@ -434,7 +434,7 @@ These scores are not universal benchmarks. They are a reference assessment of on
 
 ## Overall system summary — 91/100
 
-The strength of the reference setup does not come from one unbeatable tool.
+The strength of this operating model does not come from one unbeatable tool.
 It comes from organizing multiple tools into one system with:
 - shared operating law
 - specialized endpoints
@@ -465,9 +465,9 @@ Public-safe labels used in this repository:
 
 The goal is to publish the system design without leaking personal machine structure.
 
-## Reference setup snapshot (sanitized)
+## Example deployment snapshot
 
-This repository is based on a real working setup. In sanitized form, the reference environment includes:
+A representative deployment of this operating model can include:
 - 30 Codex skills
 - 3 global memory files
 - 10 project governance commands
