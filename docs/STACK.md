@@ -3,6 +3,8 @@
 ## Core platform
 
 - Codex desktop
+- Cursor
+- Antigravity
 - `gpt-5.4`
 - `multi_agent`
 - local terminal execution
@@ -17,6 +19,8 @@
 - governed command wrappers
 - hook-style lifecycle checks
 - role-based orchestration
+- IDE-facing project rules
+- workflow and knowledge stubs for broader platform agents
 
 ## Key skills
 
@@ -69,7 +73,7 @@ It is meant to be a governed capability system:
 
 ## Cross-platform context
 
-This Codex stack is designed to live inside a broader shared instruction system.
+This local-AI stack is designed to live inside a broader shared instruction system.
 
 That shared layer spans:
 - Claude Code
@@ -81,3 +85,6 @@ That shared layer spans:
 The practical result is:
 - one top-level operating law
 - tool-specific execution layers beneath it
+- Codex for governed execution
+- Cursor for editor-native rule application
+- Antigravity for broad workflow and domain expansion

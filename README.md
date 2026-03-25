@@ -36,6 +36,7 @@ This repository packages that layer as a reusable local AI engineering mesh.
 
 - A local-AI workflow model organized like a real repository
 - A cross-platform instruction model with multiple governed execution endpoints
+- Concrete starting templates for Codex, Cursor, and Antigravity layers
 - Publish-ready documentation instead of a process diary
 - Templates for global memory and project memory
 - A clean comparison frame against the latest Claude workflow model
@@ -85,6 +86,8 @@ local-ai-engineering-mesh/
 │   ├── X-POSTS-CN.md
 │   └── X-LONG-POST-CN.md
 └── templates/
+    ├── antigravity/
+    ├── cursor/
     ├── global-memory/
     ├── project-memory/
     └── policy.env.example
@@ -144,6 +147,8 @@ See [STACK.md](docs/STACK.md).
 This repository includes reusable templates for:
 - global memory
 - project memory
+- Cursor project rules
+- Antigravity workflow and knowledge stubs
 - policy defaults
 
 The goal is to help you start with a governed local-AI layout instead of inventing one from scratch.

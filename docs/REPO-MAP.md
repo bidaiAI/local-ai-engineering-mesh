@@ -20,7 +20,7 @@ This repository is organized to explain the final system, not the historical bui
 - ready-to-post X copy in a style that fits technical launch threads
 
 ### `templates/`
-- reusable starting points for memory and policy files
+- reusable starting points for memory, policy, Cursor rules, and Antigravity workflow/knowledge files
 
 ## How to read this repository
 
@@ -33,6 +33,7 @@ This repository is organized to explain the final system, not the historical bui
 1. read `docs/STACK.md`
 2. inspect `templates/`
 3. adapt the templates into your Codex environment first, or into a multi-tool setup if you use more than one local AI tool
+4. add Cursor rules and Antigravity workflow stubs if you want the full mesh shape
 
 ### Social path
 1. read `social/X-POSTS-CN.md`
