@@ -166,9 +166,6 @@ local-ai-engineering-mesh/
 │   ├── REPO-MAP.md
 │   ├── STACK.md
 │   └── FRAMEWORK-DIAGRAM.md
-├── social/
-│   ├── X-POSTS-CN.md
-│   └── X-LONG-POST-CN.md
 └── templates/
     ├── antigravity/
     ├── cursor/
@@ -192,13 +189,6 @@ Adoption paths:
 - single-tool first
 - dual-tool setup
 - full mesh: Codex + Cursor + Antigravity + Claude under one shared law
-
-## Social copy
-
-If you want to post the project publicly, use:
-- [X-POSTS-CN.md](social/X-POSTS-CN.md)
-- [X-LONG-POST-CN.md](social/X-LONG-POST-CN.md)
-- [FRAMEWORK-DIAGRAM.md](docs/FRAMEWORK-DIAGRAM.md)
 
 ## References
 

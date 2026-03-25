@@ -1,5 +1,22 @@
 # Cross-Platform
 
+[中文摘要](#中文摘要) | [English Summary](#english-summary) | [Русское резюме](#русское-резюме) | [日本語要約](#日本語要約) | [Résumé français](#résumé-français)
+
+## English Summary
+This repository describes one shared operating law across multiple AI coding tools. Codex is the strongest execution hub, Cursor is the IDE-native implementation layer, Antigravity is the broad capability platform, and Claude remains a strong workflow benchmark. The value is not one perfect tool, but a system that survives tool switching and keeps one quality bar.
+
+## 中文摘要
+这个仓库描述的是一套跨工具共享的 operating law。Codex 是主执行中枢，Cursor 是 IDE 原生实现层，Antigravity 是广谱能力平台，Claude 仍然是重要的工作流标杆。关键价值不在于某一个工具绝对最强，而在于整套系统在切换工具时仍然保持同一质量门槛。
+
+## Русское резюме
+Этот репозиторий описывает единую operating law для нескольких AI-инструментов разработки. Codex выступает главным центром исполнения, Cursor — IDE-native слоем реализации, Antigravity — платформой широких возможностей, а Claude остаётся сильным эталоном workflow. Ценность не в одном идеальном инструменте, а в системе, которая сохраняет единый стандарт качества при переключении между инструментами.
+
+## 日本語要約
+このリポジトリは、複数のAI開発ツールにまたがる共通の operating law を説明します。Codex は主実行ハブ、Cursor は IDE ネイティブな実装層、Antigravity は広域能力プラットフォーム、Claude は依然として強力な workflow ベンチマークです。価値は単一の最強ツールではなく、ツールを切り替えても品質基準を保てるシステムにあります。
+
+## Résumé français
+Ce dépôt décrit une operating law commune à plusieurs outils IA de développement. Codex est le hub principal d’exécution, Cursor la couche d’implémentation native à l’IDE, Antigravity la plateforme de capacités larges, et Claude reste un benchmark solide de workflow. La valeur n’est pas un outil parfait, mais un système qui conserve un même niveau de qualité malgré les changements d’outil.
+
 ## What this means
 
 This repository describes the Codex side of a larger cross-platform AI coding system.

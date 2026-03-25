@@ -162,9 +162,6 @@ local-ai-engineering-mesh/
 │   ├── REPO-MAP.md
 │   ├── STACK.md
 │   └── FRAMEWORK-DIAGRAM.md
-├── social/
-│   ├── X-POSTS-CN.md
-│   └── X-LONG-POST-CN.md
 └── templates/
     ├── antigravity/
     ├── cursor/
@@ -188,13 +185,6 @@ local-ai-engineering-mesh/
 - 先升级单个工具
 - 双工具协作
 - 全量 Mesh：Codex + Cursor + Antigravity + Claude 共用一套法则
-
-## 社交文案
-
-如果你要公开发项目，可以直接用：
-- [X-POSTS-CN.md](social/X-POSTS-CN.md)
-- [X-LONG-POST-CN.md](social/X-LONG-POST-CN.md)
-- [FRAMEWORK-DIAGRAM.md](docs/FRAMEWORK-DIAGRAM.md)
 
 ## 参考来源
 

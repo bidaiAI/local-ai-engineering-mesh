@@ -77,9 +77,6 @@ local-ai-engineering-mesh/
 │   ├── REPO-MAP.md
 │   ├── STACK.md
 │   └── FRAMEWORK-DIAGRAM.md
-├── social/
-│   ├── X-POSTS-CN.md
-│   └── X-LONG-POST-CN.md
 └── templates/
     ├── global-memory/
     ├── project-memory/

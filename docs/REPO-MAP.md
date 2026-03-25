@@ -1,46 +1,53 @@
-# Repo Map
+# Repository Map
 
-## Purpose
-
-This repository is organized to explain the final system, not the historical build process.
-
-## Top-level structure
+## Root
 
 ### `README.md`
-- public landing page
-- positioning
-- high-level architecture
-- latest-Claude comparison
+Primary English overview with multilingual navigation.
 
-### `docs/`
-- deeper explanations for readers who want the full model
-- includes the cross-platform framing so the repository is not misread as a standalone prompt pack
+### `README.zh-CN.md` / `README.ru.md` / `README.ja.md` / `README.fr.md`
+Localized readme variants for Chinese, Russian, Japanese, and French readers.
 
-### `social/`
-- ready-to-post X copy in a style that fits technical launch threads
+## `docs/`
 
-### `templates/`
-- reusable starting points for memory, policy, Cursor rules, and Antigravity workflow/knowledge files
+### `ARCHITECTURE.md`
+Layered operating-model design.
 
-## How to read this repository
+### `COMPARE-WITH-CLAUDE.md`
+Comparison against the latest public Claude workflow baseline, now with multilingual summary blocks.
 
-### Fast path
+### `CROSS-PLATFORM.md`
+How Codex, Cursor, Antigravity, Claude Code, and other endpoints share one operating law, now with multilingual summary blocks.
+
+### `EXECUTION-LOOP.md`
+The core execution loop: research -> plan -> execute -> verify.
+
+### `FRAMEWORK-DIAGRAM.md`
+Diagram-oriented explanation of the mesh and file structure.
+
+### `STACK.md`
+Tooling and subscription stack overview.
+
+## `templates/`
+
+### `templates/global-memory/`
+Global operating-memory seeds.
+
+### `templates/project-memory/`
+Project-level memory templates.
+
+### `templates/cursor/`
+Cursor rule templates.
+
+### `templates/antigravity/`
+Antigravity workflow and knowledge templates.
+
+### `policy.env.example`
+Shared policy defaults.
+
+## Practical usage
+
 1. read `README.md`
-2. read `docs/ARCHITECTURE.md`
+2. read `docs/CROSS-PLATFORM.md`
 3. read `docs/COMPARE-WITH-CLAUDE.md`
-
-### Builder path
-1. read `docs/STACK.md`
-2. inspect `templates/`
-3. adapt the templates into your Codex environment first, or into a multi-tool setup if you use more than one local AI tool
-4. add Cursor rules and Antigravity workflow stubs if you want the full mesh shape
-
-### Social path
-1. read `social/X-POSTS-CN.md`
-2. choose the short, technical, or long-post version
-
-## Why templates exist
-
-The templates are included because workflow quality does not come from prose alone.
-
-The fastest way to upgrade your AI tools is to start from reusable memory and policy structure rather than describing the same rules again in every session.
+4. inspect `templates/` for the tool you want to adopt first
