@@ -8,6 +8,12 @@
 
 这不是 prompt 包，也不是 skill 收藏夹。它是一套可公开复用的 operating model，用来把多个 AI 工具组织成一个可协同的本地工程 mesh。
 
+## 可视化总览
+
+![Local AI Engineering Mesh 总览图](docs/poster-cn.svg)
+
+更多社交传播图与海报素材放在 [docs/media/](docs/media/README.md)。
+
 ## TL;DR
 
 - 只有一个工具，也可以先开始。
@@ -605,6 +611,7 @@ local-ai-engineering-mesh/
 │   ├── CROSS-PLATFORM.md
 │   ├── EXECUTION-LOOP.md
 │   ├── DEMO.md
+│   ├── media/
 │   ├── REPO-MAP.md
 │   ├── STACK.md
 │   └── FRAMEWORK-DIAGRAM.md

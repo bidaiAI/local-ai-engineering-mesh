@@ -59,6 +59,9 @@ Beginner-friendly adoption guide for single-tool, dual-tool, and full-mesh setup
 ### `DEMO.md`
 Shortest runnable CLI flow for recording a 60-second demo.
 
+### `media/`
+Shareable poster assets for X posts, launch threads, and visual summaries.
+
 ### `TOOL-LAYERS.md`
 Detailed next-layer breakdown for Codex, Claude, Cursor, and Antigravity.
 

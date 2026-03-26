@@ -8,6 +8,12 @@ A public-safe operating model for turning local AI tools into one governed, memo
 
 This repository is not a prompt pack and not a skill collection. It is a structured reference for building a multi-tool local AI workflow with shared rules, explicit roles, project runtime discipline, and reusable system patterns.
 
+## Visual overview
+
+![Local AI Engineering Mesh overview](docs/poster-cn.svg)
+
+Additional social/poster assets live in [docs/media/](docs/media/README.md).
+
 ## TL;DR
 
 - Start with one tool if that is all you have.
@@ -608,6 +614,7 @@ local-ai-engineering-mesh/
 │   ├── CROSS-PLATFORM.md
 │   ├── EXECUTION-LOOP.md
 │   ├── DEMO.md
+│   ├── media/
 │   ├── REPO-MAP.md
 │   ├── STACK.md
 │   └── FRAMEWORK-DIAGRAM.md
