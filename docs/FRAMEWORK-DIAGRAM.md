@@ -134,9 +134,15 @@ promote wins into templates / rules / skills"]
 ```text
 local-ai-engineering-mesh/
 ├── README.md
+├── pyproject.toml
+├── mesh/
+│   └── commands/
+├── demo/
+│   └── mesh-demo.sh
 ├── docs/
 │   ├── ARCHITECTURE.md
 │   ├── BOOTSTRAP-SPEC.md
+│   ├── DEMO.md
 │   ├── MEMORY-SCHEMA.md
 │   ├── OPERATING-CHARTER.md
 │   ├── TOOL-LAYERS.md
@@ -148,8 +154,6 @@ local-ai-engineering-mesh/
 │   ├── REPO-MAP.md
 │   ├── STACK.md
 │   └── FRAMEWORK-DIAGRAM.md
-├── scripts/
-│   └── setup-project-runtime.sh
 ├── skills/
 │   ├── README.md
 │   ├── state-store-memory/
@@ -157,6 +161,8 @@ local-ai-engineering-mesh/
 │   ├── governed-deploy/
 │   ├── visual-evidence/
 │   └── project-bootstrap/
+├── scripts/
+│   └── setup-project-runtime.sh
 └── templates/
     ├── AGENTS.example.md
     ├── antigravity/

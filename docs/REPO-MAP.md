@@ -5,7 +5,7 @@
 This repository is organized around three public-safe views:
 - overall system layers
 - per-tool structure layers
-- reusable templates without personal machine paths
+- reusable templates without host-specific paths
 
 ## Root
 
@@ -14,6 +14,15 @@ Main English readme with the full system framework, four-tool evaluation, and sa
 
 ### `README.zh-CN.md`
 Chinese readme with the full framework explanation and four-tool system assessment.
+
+### `pyproject.toml`
+Minimal packaging entry for the `mesh` CLI.
+
+### `mesh/`
+Minimal runtime package for bootstrapping, inspecting, handing off, and verifying project mesh adoption.
+
+### `demo/`
+Shortest runnable demo entrypoint for recording and showing the mesh flow.
 
 ## `docs/`
 
@@ -46,6 +55,9 @@ Tooling and stack overview in public-safe form.
 
 ### `QUICKSTART.md`
 Beginner-friendly adoption guide for single-tool, dual-tool, and full-mesh setup.
+
+### `DEMO.md`
+Shortest runnable CLI flow for recording a 60-second demo.
 
 ### `TOOL-LAYERS.md`
 Detailed next-layer breakdown for Codex, Claude, Cursor, and Antigravity.

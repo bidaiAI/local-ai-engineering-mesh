@@ -14,6 +14,7 @@ This repository is not a prompt pack and not a skill collection. It is a structu
 - Add shared law, project memory, and evidence discipline first.
 - Grow into Codex + Cursor + Claude for the highest-performance general software workflow.
 - Add Antigravity when you need broader browser, artifact, and cross-domain capability.
+- Use `python3 -m mesh init` to turn the operating model into a runnable project runtime.
 
 ## Why this repository exists
 
@@ -463,7 +464,7 @@ Public-safe labels used in this repository:
 - `<project>/.cursor/rules/`
 - `<antigravity-home>/skills|workflows|knowledge`
 
-The goal is to publish the system design without leaking personal machine structure.
+The goal is to publish the system design without leaking host-specific structure.
 
 ## Example deployment snapshot
 
@@ -490,7 +491,7 @@ The repository also includes a public-safe subset of original native skills unde
 - `visual-evidence`
 - `project-bootstrap`
 
-These are meant to share distinctive system behavior, not private machine state.
+These are meant to share distinctive system behavior, not environment-specific private state.
 
 ## Tool templates
 
@@ -511,18 +512,21 @@ You can start with a single tool and still improve your workflow.
 ```bash
 git clone https://github.com/bidaiAI/local-ai-engineering-mesh.git
 cd local-ai-engineering-mesh
-./scripts/setup-project-runtime.sh /path/to/your-project
+python3 -m mesh init /path/to/your-project
 ```
 
 This creates:
 - `<project>/.codex/memory/`
 - `<project>/.codex/state/`
 - `<project>/.cursor/rules/`
+- `<project>/.mesh/handoff.md`
+- `<project>/.mesh/runtime.json`
 
 Then:
 1. copy `templates/AGENTS.example.md` into your shared-law location
 2. adapt it for your tool
 3. fill in the project memory files
+4. run `python3 -m mesh inspect /path/to/your-project`
 
 ### Dual-tool setup
 Use one execution tool and one editor/research tool under the same shared law.
@@ -531,10 +535,11 @@ Use one execution tool and one editor/research tool under the same shared law.
 Connect Codex, Claude, Cursor, and Antigravity under one shared law when you are ready.
 
 See [QUICKSTART.md](docs/QUICKSTART.md).
+See [DEMO.md](docs/DEMO.md) for the shortest runnable flow.
 
 ## Core operating documents
 
-These are the documents that make the repository feel like a real working system rather than a collection of notes:
+These are the documents that make the repository read like a coherent operating model rather than a collection of notes:
 - [OPERATING-CHARTER.md](docs/OPERATING-CHARTER.md)
 - [MEMORY-SCHEMA.md](docs/MEMORY-SCHEMA.md)
 - [BOOTSTRAP-SPEC.md](docs/BOOTSTRAP-SPEC.md)
@@ -571,6 +576,14 @@ See [COMPARE-WITH-CLAUDE.md](docs/COMPARE-WITH-CLAUDE.md).
 
 ```text
 local-ai-engineering-mesh/
+├── pyproject.toml
+├── mesh/
+│   ├── __main__.py
+│   ├── cli.py
+│   ├── runtime.py
+│   └── commands/
+├── demo/
+│   └── mesh-demo.sh
 ├── README.md
 ├── README.zh-CN.md
 ├── LICENSE
@@ -594,6 +607,7 @@ local-ai-engineering-mesh/
 │   ├── COMPARE-WITH-CLAUDE.md
 │   ├── CROSS-PLATFORM.md
 │   ├── EXECUTION-LOOP.md
+│   ├── DEMO.md
 │   ├── REPO-MAP.md
 │   ├── STACK.md
 │   └── FRAMEWORK-DIAGRAM.md

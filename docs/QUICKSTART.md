@@ -9,13 +9,15 @@ Best if you only want to upgrade one tool right now.
 ```bash
 git clone https://github.com/bidaiAI/local-ai-engineering-mesh.git
 cd local-ai-engineering-mesh
-./scripts/setup-project-runtime.sh /path/to/your-project
+python3 -m mesh init /path/to/your-project
 ```
 
 ### What this gives you
 - project memory skeleton in `<project>/.codex/memory/`
 - project state seed in `<project>/.codex/state/`
 - Cursor rule skeleton in `<project>/.cursor/rules/`
+- cross-tool handoff file in `<project>/.mesh/handoff.md`
+- runtime metadata in `<project>/.mesh/runtime.json`
 
 ### Next step
 Copy `templates/AGENTS.example.md` into your shared-law location and adapt it for your tool.
@@ -89,3 +91,16 @@ For most software engineering work, the strongest general combination is:
 - Codex for governed execution and runtime discipline
 
 Add Antigravity when the workflow becomes browser-heavy, artifact-heavy, or cross-domain.
+
+
+## Minimal CLI
+
+This repository now ships with a minimal CLI:
+
+```bash
+python3 -m mesh --help
+python3 -m mesh init /path/to/your-project
+python3 -m mesh inspect /path/to/your-project
+python3 -m mesh handoff /path/to/your-project --task "Add login rate limiting" --next-endpoint Cursor
+python3 -m mesh verify /path/to/your-project
+```

@@ -9,4 +9,4 @@ These are included because they express distinctive operating behavior rather th
 - `visual-evidence`
 - `project-bootstrap`
 
-The goal is to share reusable functionality without exposing private machine configuration.
+The goal is to share reusable functionality without exposing environment-specific private configuration.

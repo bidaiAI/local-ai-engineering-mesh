@@ -14,6 +14,7 @@
 - 先补 shared law、project memory、evidence discipline。
 - 对大多数软件工程场景，`Codex + Cursor + Claude` 是最高性能通用组合。
 - 当你需要更强的 browser / artifact / 跨域能力时，再接入 Antigravity。
+- 现在可以直接用 `python3 -m mesh init` 把这套 operating model 落成可运行的项目 runtime。
 
 ## 这个仓库为什么存在
 
@@ -508,18 +509,21 @@ promote wins into templates / rules / skills"]
 ```bash
 git clone https://github.com/bidaiAI/local-ai-engineering-mesh.git
 cd local-ai-engineering-mesh
-./scripts/setup-project-runtime.sh /path/to/your-project
+python3 -m mesh init /path/to/your-project
 ```
 
 这会创建：
 - `<project>/.codex/memory/`
 - `<project>/.codex/state/`
 - `<project>/.cursor/rules/`
+- `<project>/.mesh/handoff.md`
+- `<project>/.mesh/runtime.json`
 
 然后：
 1. 把 `templates/AGENTS.example.md` 复制到你的 shared-law 位置
 2. 按你的工具调整
 3. 把项目记忆文件补完整
+4. 运行 `python3 -m mesh inspect /path/to/your-project`
 
 ### 双工具协作
 让一个执行工具和一个编辑器/研究工具共用同一套法则。
@@ -528,6 +532,7 @@ cd local-ai-engineering-mesh
 等你准备好了，再把 Codex、Claude、Cursor、Antigravity 接到同一套 shared law 下。
 
 参见 [QUICKSTART.md](docs/QUICKSTART.md)。
+最短可运行演示见 [DEMO.md](docs/DEMO.md)。
 
 ## 核心制度文档
 
@@ -568,6 +573,14 @@ cd local-ai-engineering-mesh
 
 ```text
 local-ai-engineering-mesh/
+├── pyproject.toml
+├── mesh/
+│   ├── __main__.py
+│   ├── cli.py
+│   ├── runtime.py
+│   └── commands/
+├── demo/
+│   └── mesh-demo.sh
 ├── README.md
 ├── README.zh-CN.md
 ├── LICENSE
@@ -591,6 +604,7 @@ local-ai-engineering-mesh/
 │   ├── COMPARE-WITH-CLAUDE.md
 │   ├── CROSS-PLATFORM.md
 │   ├── EXECUTION-LOOP.md
+│   ├── DEMO.md
 │   ├── REPO-MAP.md
 │   ├── STACK.md
 │   └── FRAMEWORK-DIAGRAM.md
